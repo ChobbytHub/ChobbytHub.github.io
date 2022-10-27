@@ -29,3 +29,7 @@ text-align: center;
 .copyright{
 text-align: center;
 }
+.container{
+height: 500px; 
+background-image: url(../img/header.jpg);
+}
