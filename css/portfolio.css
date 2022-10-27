@@ -7,3 +7,14 @@
   'GRAD' 0,
   'opsz' 48
 }
+nav ul{
+list-style: none;
+display: flex;
+justify-content: center;
+}
+
+nav ul li a{
+text-decoration: none;
+color: #666;
+padding:10px;
+}
