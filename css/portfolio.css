@@ -8,44 +8,39 @@
   'opsz' 48
 }
 body{
-margin:0px;
+  margin:0px;
 }
 nav ul{
-list-style: none;
-display: flex;
-justify-content: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li a{
-text-decoration: none;
-padding:10px;
-}
-h1{
-text-align: center;
+  text-decoration: none;
+  padding:10px;
 }
 h2{
-text-align: center;
+  text-align: center;
 }
-h1{
-text-align: center;
+header h1{
+  height:60px;
+  display:table;
+  text-align:center;
 }
 .copyright{
 text-align: center;
 }
 .container{
-height: 300px;
-background-color: #ff8c00; 
-background-image: url(../img/header.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
+  height: 300px;
+  background-color: #ff8c00; 
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-header{
-height: 300px;
-display:table;
-text-align: center;
-}
-header div{
+
+header h1 div{
 display:table-cell;
 vertical-align:middle;
 }
