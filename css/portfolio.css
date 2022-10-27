@@ -37,10 +37,12 @@ background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
 }
-header div{
+header{
+height: 300px;
 display:table;
+text-align: center;
 }
-header h1{
+header div{
 display:table-cell;
 vertical-align:middle;
 }
