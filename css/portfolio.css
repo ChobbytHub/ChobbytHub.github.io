@@ -17,6 +17,9 @@ body{
   margin:0px;
   background-color: #fff4e2; 
 }
+main{
+  color: #333333;
+}
 footer{
   color: #ffffff;
   height: 100px;
@@ -69,4 +72,28 @@ header h1 div{
 }
 footer nav ul li a{
   color: #ffffff;
+}
+a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+a::after {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #333333;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+footer a::after {
+  background: #ffffff;
 }
