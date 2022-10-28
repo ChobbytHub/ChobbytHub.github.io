@@ -10,16 +10,8 @@
 </head>
 
 <body>
-
-  <header class="container"> 
-    <h1>
-      <div>
-        Naoki Iwasaki<br>
-        Portfolio     
-      </div>
-    </h1>
-  </header>
-  <nav id="gnav">
+  <header id="header">
+    <nav id="g-nav">
       <ul>
         <li><a href="#profile"><span class="material-symbols-outlined">person_filled</span>Profile</a></li>
         <li><a href="#skills"><span class="material-symbols-outlined">pan_tool_alt</span>Skills</a></li>
@@ -27,17 +19,27 @@
         <li><a href="#contact"><span class="material-symbols-outlined">mail</span>Contact</a></li>
       </ul>
     </nav>
+  </header>
+  <div class="container"> 
+    <h1>
+      <div>
+        Naoki Iwasaki<br>
+        Portfolio     
+      </div>
+    </h1>
+  </div>
+  
   <main>
-    <section id="profile">
+    <section class="scroll-point" id="profile">
       <h2><span class="material-symbols-outlined">person_filled</span>Profile</h2>
     </section>
-    <section id="skills">
+    <section class="scroll-point" id="skills">
       <h2><span class="material-symbols-outlined">pan_tool_alt</span>Skills</h2>
     </section>
-    <section id="works">
+    <section class="scroll-point" id="works">
       <h2><span class="material-symbols-outlined">subject</span>Works</h2>
     </section>
-    <section id="contact">
+    <section class="scroll-point" id="contact">
       <h2><span class="material-symbols-outlined">mail</span>Contact</h2>
     </section>
   </main>
@@ -53,6 +55,8 @@
     <p class="copyright">Copyright&copy;Naoki Iwasaki. All Rights Reserved.</p>
   </footer>
 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/gnav.js"></script>  
 </body>
 
 </html>
