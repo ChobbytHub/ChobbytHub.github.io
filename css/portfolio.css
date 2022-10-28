@@ -22,6 +22,17 @@ body{
 main{
   color: #333333;
 }
+#header{
+	position: fixed;/*header固定*/
+	height: 70px;/*Headerの高さ設定*/
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background:#333333;
+	color:#ffffff;
+	text-align: center;
+}
 footer{
   color: #ffffff;
   height: 100px;
@@ -33,11 +44,14 @@ nav ul{
   display: flex;
   justify-content: center;
 }
-
 nav ul li a{
   text-decoration: none;
   padding:10px;
   margin: 0 20px;
+}
+nav ul li.current a,
+nav ul li a:hover{
+    color:#ffffff;
 }
 h2{
   font-size: 5rem;
@@ -55,14 +69,14 @@ h2{
   background-repeat: no-repeat;
   background-position: center;
 }
-header h1{
+.container h1{
   font-size: 8rem;
   color: #ffffff;
   height:300px;
   text-align:center;
   position:relative;
 }
-header h1 div{
+.container h1 div{
   position:absolute;
   top:50%;
   left:50%;
