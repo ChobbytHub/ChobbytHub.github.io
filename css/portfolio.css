@@ -10,7 +10,6 @@
   top: 0;
   left: 0;
   right: 0;
-  width:100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,9 +36,19 @@ h1{
 }
 h2{
   font-family: 'Fuzzy Bubbles', cursive;
-  font-size:6rem;
+  font-size:8rem;
   color:#ffffff;
   text-align:center;
+}
+@media screen and (max-width: 623px) {
+  h2{
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  html{
+    font-size: 6px;
+  }
 }
 h3{
   font-size:5rem;
@@ -60,8 +69,12 @@ div.header{
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: grid;
+  place-items: center;
 }
-
+.box{
+  margin: auto;
+}
 footer nav,
 small{
   background:#333333;
@@ -127,15 +140,26 @@ section:nth-child(2n){
   padding:30px;
 }
 @media screen and (max-width: 511px) {
-  #header{
-    height: 100px;
-  }
-  div.header{
-    margin-top: 100px;
+  h1{
+    font-size: 1rem;
   }
 }
-@media screen and (max-width: 482px) {
-  h2{
-    margin-block: 10px;
-  }
+.profile{
+  background-image: url("../img/icon/Large/id-card.svg");
+}
+.skills{
+  background-image: url("../img/icon/Large/imac.svg");
+}
+.works{
+  background-image: url("../img/icon/Large/file-2.svg");
+}
+.contact{
+  background-image: url("../img/icon/Large/envelope.svg");
+}
+.icon{
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
 }
