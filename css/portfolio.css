@@ -1,116 +1,79 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap');
+/*========= 現在地表示のためのCSS ===============*/
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 700,
-  'GRAD' 200,
-  'opsz' 48
-}
-html{
-  font-size: 10px;
-  font-family: 'M PLUS 1p', sans-serif;
-}
-body{
-  font-size: 1.6em;
-  margin:0px;
-  background-color: #fff4e2; 
-}
-main{
-  color: #333333;
-}
 #header{
-	position: fixed;/*header固定*/
-	height: 70px;/*Headerの高さ設定*/
-	width:100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background:#333333;
-	color:#ffffff;
-	text-align: center;
+  position: fixed;/*header固定*/
+  height: 70px;/*Headerの高さ設定*/
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:#333;
+  color:#fff;
+  text-align: center;
+  padding: 20px;
 }
-footer{
-  color: #ffffff;
-  height: 100px;
-  background-color: #333333;
-  border: 10px solid #333333;
+
+/*========= レイアウトのためのCSS ===============*/
+
+h1{
+  font-size:1.2rem;
 }
+
+h2{
+  font-size:1.2rem;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+p{
+  margin-top:20px;  
+}
+
+small{
+  background:#333;
+  color:#fff;
+  display: block;
+  text-align: center;
+  padding:20px;
+}
+
+
 nav ul{
   list-style: none;
   display: flex;
   justify-content: center;
 }
+
 nav ul li a{
+  display: block;
   text-decoration: none;
+  color: #666;
   padding:10px;
-  margin: 0 20px;
+  transition:all 0.3s;
 }
+
 nav ul li.current a,
 nav ul li a:hover{
-    color:#ffffff;
+  color:#fff; 
 }
-h2{
-  font-size: 5rem;
-  text-align: center;
+@media screen and (max-width:768px) {
+  nav ul li a:hover{    
+    color: #666;
+  }
+  nav ul li.current a {
+    color:#fff; 
+  }
 }
-.copyright{
-  text-align: center;
-  font-size: 1rem;
+section{
+  padding:30px;
 }
-.container{
-  height: 300px;
-  background-color: #ff8c00; 
-  background-image: url(../img/header.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+
+section:nth-child(1){
+  padding:100px 30px 30px;  
 }
-.container h1{
-  font-size: 8rem;
-  color: #ffffff;
-  height:300px;
-  text-align:center;
-  position:relative;
-}
-.container h1 div{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  width:100%;
-  font-family: 'Fuzzy Bubbles', cursive;
-}
-#gnav ul li a{
-  color: #333333;
-}
-footer nav ul li a{
-  color: #ffffff;
-}
-a {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-}
-a::after {
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 2px;
-  background: #333333;
-  transform: scale(0, 1);
-  transform-origin: right top;
-  transition: transform .3s;
-}
-a:hover::after {
-  transform-origin: left top;
-  transform: scale(1, 1);
-}
-footer a::after {
-  background: #ffffff;
+
+section:nth-child(2n){
+  background:#f3f3f3; 
 }
