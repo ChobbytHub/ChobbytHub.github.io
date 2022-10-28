@@ -33,7 +33,7 @@ $(NavElem[3]).addClass('current');//4つめのliに現在地クラスを付与
 }
 
 //ナビゲーションをクリックした際のスムーススクロール
-$('#g-nav a').click(function () {
+$('#g-nav a, footer nav a').click(function () {
 var elmHash = $(this).attr('href'); //hrefの内容を取得
 var headerH = $("#header").outerHeight(true);//追従するheader分の高さ（70px）を引く
 var pos = Math.round($(elmHash).offset().top-headerH); //headerの高さを引き小数点を四捨五入
