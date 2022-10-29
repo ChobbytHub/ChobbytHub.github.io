@@ -177,7 +177,7 @@ section:nth-child(2n){
   background-position: center;
 }
 
-.return_btn{
+a.return_btn{
   /*丸の基点とするためrelativeを指定*/
 position: relative;
   /*ボタンの形状*/  
@@ -190,7 +190,7 @@ line-height: 50px;
 }
 
 /* 丸が動く */
-.return_btn::before{
+a.return_btn::before{
 content:'';
   /*絶対配置で丸の位置を決める*/
 position:absolute;
@@ -206,12 +206,12 @@ border-radius:25px;
 }
 
 /*hoverした際の形状*/
-.return_btn:hover::before{
+a.return_btn:hover::before{
 width:212px;
 }
 
 /* 矢印の形状 */
-.return_btn::after{
+a.return_btn::after{
   position: absolute;
     content: '';
     top: 1.3em;
@@ -223,7 +223,7 @@ width:212px;
     transform: rotate(45deg);
 }
 
-body{
+#thanks{
   vertical-align:middle; 
   padding: 100px 0;
   text-align: center;
