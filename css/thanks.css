@@ -81,13 +81,6 @@ section{
   padding:30px;
 }
 
-section:nth-child(1){
-  padding:100px 30px 30px;  
-}
-
-section:nth-child(2n){
-  background:#fff7e7; 
-}
 .header section{
   padding:30px;
 }
@@ -101,7 +94,7 @@ section:nth-child(2n){
     /*矢印の基点とするためrelativeを指定*/
   position: relative;
     /*ボタンの形状*/
-  border: 1px solid #555;
+  border: 2px solid #555;
     padding: 8px 30px;
     display: inline-block;
     text-align: center;
@@ -113,7 +106,7 @@ section:nth-child(2n){
 }
 
 .rtnbtn:hover{
-  background:#333;
+  background:#ffae0f;
   color:#fff;
 }
 
@@ -123,10 +116,10 @@ section:nth-child(2n){
     /*絶対配置で下線の位置を決める*/
   position: absolute;
   top:50%;
-  right:-26px;
+  left:-26px;
     /*下線の形状*/
-  width:40px;
-  height:1px;
+  width:41px;
+  height:2px;
   background:#333;
     /*アニメーションの指定*/
     transition: all .2s linear;
@@ -137,30 +130,46 @@ section:nth-child(2n){
     /*絶対配置で矢印の位置を決める*/
   position: absolute;
     top: 20%;
-    right: -21px;
+    left: -21px;
     /*矢印の形状*/
-  width:1px;
-  height:12px;
+  width:2.4px;
+  height:13.4px;
   background:#333;
-    transform:skewX(45deg);
+    transform:skewX(135deg);
     /*アニメーションの指定*/
     transition: all .2s linear;
 }
 
 /*hoverした際の移動*/
 .rtnbtn:hover::before{
-  right:-30px;
+  left:-30px;
 }
 
 .rtnbtn:hover::after{
-  right:-25px;
+  left:-25px;
 }
-
-
 
 #thanks{
   vertical-align:middle; 
-  padding: 100px 0;
+  padding: 70px 0;
   text-align: center;
+}
+
+
+.sentMail::before{
+  background-image: url("../img/icon/email-svgrepo-com.svg");
+}
+.icon{
+  padding: 0rem 1.6rem 0rem;
+  align-items: center;
+}
+.icon::before {
+  content: '';
+  display: inline-block;
+  width: 15em;
+  height: 15em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
