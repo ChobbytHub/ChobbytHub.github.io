@@ -194,6 +194,7 @@ form button{
 }
 .g-recaptcha{
   transform-origin: 0% 0%;
+  width:300px;
 }
 #mailForm table{
   text-align: left;
