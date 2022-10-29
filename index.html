@@ -28,7 +28,7 @@
       </section>
     </div>
     <section class="scroll-point" id="area-1">
-      <h3><span class="icon profile"></span><Profile</h3>
+      <h3><span class="icon profile"></span>Profile</h3>
       <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
       <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
     <!--/area1--></section>
@@ -53,12 +53,17 @@
       <section class="scroll-point" id="area-4">
       <h3><span class="icon contact"></span>Contact</h3>
       <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-      <form action="https://ssgform.com/s/CR2iSndWmu1R" method="post">
-        <p>お問い合わせはコチラから</p>
-        <p>　　　　　お名前：<input type="text" name="お名前" required="required" /></p>
-        <p>　メールアドレス：<input type="email" name="メールアドレス" required="required" /></p>
-        <p>お問い合わせ内容：<textarea name="お問い合わせ内容" required="required"></textarea></p>
-        <div class="g-recaptcha" data-sitekey="6LcJD8IiAAAAAB8whaFBaDeRifEN9wx0BNsrZca6"></div><!-- 専用タグの設置必要 -->
+      <form id="mailForm" action="https://ssgform.com/s/CR2iSndWmu1R" method="post">
+        <table>
+          <tr><th>お問い合わせはコチラから</th></tr>
+          <tr><td >お名前</td></tr>
+          <tr><td><input type="text" name="お名前" required="required" /></td></tr>
+          <tr><td>メールアドレス</td></tr>
+          <tr><td><input type="email" name="メールアドレス" required="required" /></td></tr>
+          <tr><td>お問い合わせ内容</td></tr>
+          <tr><td><textarea name="お問い合わせ内容" required="required"></textarea></td></tr>
+          <tr><td><div class="g-recaptcha" data-sitekey="6LcJD8IiAAAAAB8whaFBaDeRifEN9wx0BNsrZca6"></div></td></tr>
+        </table>
         <button type="submit">送信する</button>
       </form>
     <!--/area4--></section>
@@ -77,9 +82,10 @@
   </footer>
 
  
-  </script>  
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script><!-- 専用スクリプトの読み込み必要 -->      
+    
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>      
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/gnav.js"></script>
+  <script src="js/reCAPTCHA_Sizer.js"></script>
 </body>
 </html>

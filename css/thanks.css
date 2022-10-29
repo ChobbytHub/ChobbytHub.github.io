@@ -77,13 +77,6 @@ small{
   padding:5px;
 }
 
-section{
-  padding:30px;
-}
-
-.header section{
-  padding:30px;
-}
 @media screen and (max-width: 511px) {
   h1{
     font-size: 1rem;
