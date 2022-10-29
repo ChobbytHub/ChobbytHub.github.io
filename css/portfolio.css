@@ -19,26 +19,11 @@ h1{
   font-size:2rem;
   margin-left: 3.2rem;
 }
-@media screen and (max-width: 511px) {
-  h1{
-    font-size: 1rem;
-  }
-}
 h2{
   font-family: 'Fuzzy Bubbles', cursive;
   font-size:8rem;
   color:#ffffff;
   text-align:center;
-}
-@media screen and (max-width: 623px) {
-  h2{
-    font-size: 6rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  html{
-    font-size: 6px;
-  }
 }
 h3{
   font-size:5rem;
@@ -54,7 +39,17 @@ p{
   font-size:1.6rem;
   margin-top:1.25rem;  
 }
-
+@media screen and (max-width: 640px) {
+  html{
+    font-size: 8px;
+  }
+  h1{
+    font-size: 1rem;
+  }
+  h2{
+    font-size: 6rem;
+  }
+}
 /*--------------------------------
  header
 ---------------------------------*/
@@ -198,8 +193,7 @@ form button{
   background:#fff7e7; 
 }
 .g-recaptcha{
-  margin:auto;
-  width:300px;
+  transform-origin: 0% 0%;
 }
 #mailForm table{
   text-align: left;
@@ -208,10 +202,39 @@ form button{
   padding: 10px;
 }
 #mailForm th{
+  width:100%;
   text-align: center;
   padding:15px;
 }
 #mailForm table input,
 #mailForm table textarea{
   width:100%;
+}
+@media screen and (max-width:640px) {
+  #mailForm{
+    width:300px;
+    text-align: center;
+    border: solid #333333;
+    margin:auto;
+    background:#fff7e7; 
+  }
+  .g-recaptcha{
+    transform-origin: 0% 0%;
+    width:200px;
+  }
+  #mailForm table{
+    text-align: left;
+    width:200px;
+    margin:auto;
+    padding: 10px;
+  }
+  #mailForm th{
+    width:200px;
+    text-align: center;
+    padding:15px;
+  }
+  #mailForm table input,
+  #mailForm table textarea{
+    width:200px;
+  }
 }

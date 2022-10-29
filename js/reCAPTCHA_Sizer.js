@@ -1,8 +1,8 @@
 function reCAPTCHA_Sizer(){
-  var $w = $("html").width(); //全体の幅
-  var $v = ($w - 32) / 302; //幅に対するreCAPTCHAの比率
-  var $h = 78 * $v + 20; //高さ
-  if($w < 640) {
+  var $w = $("#mailForm table").width(); //全体の幅
+  var $v = $w / 310; //幅に対するreCAPTCHAの比率
+  var $h = 78 * $v; //高さ
+  if($w < 500) {
     $(".g-recaptcha").css("transform","scale(" + $v + ")");
     $(".g-recaptcha > div").css("height",$h);
   } else {
