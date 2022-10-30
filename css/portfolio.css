@@ -237,15 +237,10 @@ form button{
     width:200px;
   }
   #mailForm table{
-    text-align: left;
     width:200px;
-    margin:auto;
-    padding: 10px;
   }
   #mailForm th{
     width:200px;
-    text-align: center;
-    padding:15px;
   }
   #mailForm table input,
   #mailForm table textarea{
