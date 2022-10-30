@@ -164,12 +164,7 @@ section:nth-child(2n){
 .contact::before{
   background-image: url("../img/icon/Large/envelope.svg");
 }
-.icon{
-  padding: 0rem 1.6rem 0rem;
-  display: inline;
-  align-items: center;
-  vertical-align: middle;
-}
+
 .icon::before {
   content: '';
   display: inline-block;
@@ -178,6 +173,12 @@ section:nth-child(2n){
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+.icon{
+  padding: 1rem 1.6rem 0rem;
+  display: inline-block;
+  align-items: center;
+  vertical-align: middle;
 }
 /*--------------------------------
  contact
