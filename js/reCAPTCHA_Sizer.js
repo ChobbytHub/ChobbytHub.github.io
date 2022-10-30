@@ -10,7 +10,9 @@ function reCAPTCHA_Sizer(){
     $(".g-recaptcha > div").css("height",78);
   }
 }
-
+window.onload = function () {
+  reCAPTCHA_Sizer();
+};
 window.onresize = function () {
   reCAPTCHA_Sizer();
 };
