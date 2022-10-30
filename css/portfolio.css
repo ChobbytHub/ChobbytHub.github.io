@@ -50,11 +50,13 @@ p{
     font-size: 6rem;
   }
 }
+
 /*--------------------------------
  header
 ---------------------------------*/
 #header{
   position: fixed;/*header固定*/
+  z-index: 10;
   height: 70px;/*Headerの高さ設定*/
   top: 0;
   left: 0;
@@ -183,6 +185,19 @@ section:nth-child(2n){
 /*--------------------------------
  contact
 ---------------------------------*/
+.contact p{
+  text-align: center;
+}
+.LinkedIn{
+  height: 1em;
+  vertical-align: middle;
+  border-bottom: solid 2px #fff0d3;
+  transition: .3s;
+}
+.LinkedIn:hover{
+  padding: 1px 0 1px;
+  border-bottom: solid 2px #0077b5;
+}
 form button{
   margin: 1rem 0 3rem;
 }
@@ -191,6 +206,7 @@ form button{
   text-align: center;
   border: solid #333333;
   margin:auto;
+  margin-top: 50px;
   background:#fff7e7; 
 }
 .g-recaptcha{
@@ -215,10 +231,6 @@ form button{
 @media screen and (max-width:640px) {
   #mailForm{
     width:300px;
-    text-align: center;
-    border: solid #333333;
-    margin:auto;
-    background:#fff7e7; 
   }
   .g-recaptcha{
     transform-origin: 0% 0%;
