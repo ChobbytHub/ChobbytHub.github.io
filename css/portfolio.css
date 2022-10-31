@@ -154,16 +154,16 @@ section:nth-child(2n){
 /*--------------------------------
  icon
 ---------------------------------*/
-.profile::before{
+.icon.profile::before{
   background-image: url("../img/icon/Large/id-card.svg");
 }
-.skills::before{
+.icon.skills::before{
   background-image: url("../img/icon/Large/macbook-pro.svg");
 }
-.works::before{
+.icon.works::before{
   background-image: url("../img/icon/Large/file-2.svg");
 }
-.contact::before{
+.icon.contact::before{
   background-image: url("../img/icon/Large/envelope.svg");
 }
 
