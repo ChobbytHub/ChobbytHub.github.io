@@ -1,6 +1,12 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap');
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,*::before,*::after{box-sizing:border-box}*{margin:0}html,body{height:100%}body{line-height:1.5;-webkit-font-smoothing:antialiased}img,picture,video,canvas,svg{display:block;max-width:100%}input,button,textarea,select{font:inherit}p,h1,h2,h3,h4,h5,h6{overflow-wrap:break-word}#root,#__next{isolation:isolate}
+
 
 html{
   font-size: 10px;
@@ -11,17 +17,19 @@ body{
   margin:0px;
   background-color: #fff0d3; 
 }
-main{
-  color:#333333;
-}
+main{color:#333333;}
 h1{
   font-family: 'Fuzzy Bubbles', cursive;
   font-size:2rem;
   margin-left: 3.2rem;
 }
+h1 a{
+  color:inherit;
+  text-decoration:none;
+}
 h2{
   font-family: 'Fuzzy Bubbles', cursive;
-  font-size:8rem;
+  font-size:6rem;
   color:#ffffff;
   text-align:center;
 }
@@ -41,15 +49,9 @@ p{
   transform: rotate(0.03deg);
 }
 @media screen and (max-width: 640px) {
-  html{
-    font-size: 8px;
-  }
-  h1{
-    font-size: 1rem;
-  }
-  h2{
-    font-size: 6rem;
-  }
+  html{font-size: 8px;}
+  h1{font-size: 1rem;}
+  h2{font-size: 5rem;}
 }
 
 /*--------------------------------
@@ -69,9 +71,7 @@ p{
   color:#ffffff;
   text-align: center;
 }
-div.header{
-  margin-top: 70px;
-}
+div.header{margin-top: 70px;}
 .container{
   height: 250px;
   background-image: url(../img/header.jpg);
@@ -81,9 +81,7 @@ div.header{
   display: grid;
   place-items: center;
 }
-.box{
-  margin: auto;
-}
+.box{margin: auto;}
 /*--------------------------------
  navigation
 ---------------------------------*/
@@ -108,12 +106,8 @@ nav ul{
   color:#ffffff; 
 }
 @media screen and (max-width:768px) {
-  #g-nav ul li a:hover{    
-    color: #666666;
-  }
-  #g-nav ul li.current a {
-    color:#ffffff; 
-  }
+  #g-nav ul li a:hover{color: #666666;}
+  #g-nav ul li.current a {color:#ffffff;}
 }
 /*--------------------------------
  footer
@@ -134,40 +128,21 @@ footer nav ul a{
   text-decoration: none;
   padding:10px;
 }
-footer ul{
-  padding-inline-start: 0px;
-}
+footer ul{padding-inline-start: 0px;}
 /*--------------------------------
  section
 ---------------------------------*/
-section{
-  padding:30px;
-}
-section:nth-child(1){
-  padding:100px 30px 30px;  
-}
-section:nth-child(2n){
-  background:#fff7e7; 
-}
-.header section{
-  padding:30px;
-}
+section{padding:30px;}
+section:nth-child(1){padding:100px 30px 30px;}
+section:nth-child(2n){background:#fff7e7;}
+.header section{padding:30px;}
 /*--------------------------------
  icon
 ---------------------------------*/
-.icon.profile::before{
-  background-image: url("../img/icon/Large/id-card.svg");
-}
-.icon.skills::before{
-  background-image: url("../img/icon/Large/macbook-pro.svg");
-}
-.icon.works::before{
-  background-image: url("../img/icon/Large/file-2.svg");
-}
-.icon.contact::before{
-  background-image: url("../img/icon/Large/envelope.svg");
-}
-
+.icon.profile::before{background-image: url("../img/icon/Large/id-card.svg");}
+.icon.skills::before{background-image: url("../img/icon/Large/macbook-pro.svg");}
+.icon.works::before{background-image: url("../img/icon/Large/file-2.svg");}
+.icon.contact::before{background-image: url("../img/icon/Large/envelope.svg");}
 .icon::before {
   content: '';
   display: inline-block;
@@ -178,7 +153,7 @@ section:nth-child(2n){
   background-position: center;
 }
 .icon{
-  padding: 0rem 1.6rem 0rem;
+  padding: 1rem 1.6rem 0rem;
   display: inline-block;
   align-items: center;
   vertical-align: middle;
@@ -186,22 +161,20 @@ section:nth-child(2n){
 /*--------------------------------
  contact
 ---------------------------------*/
-.contact p{
-  text-align: center;
-}
+.contact p{text-align: center;}
 .LinkedIn{
+  display:inline;
   height: 1em;
   vertical-align: middle;
   border-bottom: solid 2px #fff0d3;
   transition: .3s;
+  box-sizing: content-box;
 }
 .LinkedIn:hover{
-  padding: 1px 0 1px;
   border-bottom: solid 2px #0077b5;
+  padding: 1.5px 0 1.5px;
 }
-form button{
-  margin: 1rem 0 3rem;
-}
+form button{margin: 1rem 0 3rem;}
 #mailForm{
   width:400px;
   text-align: center;
@@ -222,9 +195,7 @@ form button{
   padding:15px;
   transform: rotate(0.03deg);
 }
-#mailForm td.rotate{
-  transform: rotate(0.03deg);
-}
+#mailForm td.rotate{transform: rotate(0.03deg);}
 #mailForm table input,
 #mailForm table textarea{
   width:100%;
@@ -238,21 +209,85 @@ form button{
   width:300px;
 }
 @media screen and (max-width:640px) {
-  #mailForm{
-    width:300px;
-  }
+  #mailForm{width:300px;}
   .g-recaptcha{
     transform-origin: 0% 0%;
     width:200px;
   }
-  #mailForm table{
-    width:200px;
-  }
-  #mailForm th{
-    width:200px;
-  }
+  #mailForm table{width:200px;}
+  #mailForm th{width:200px;}
   #mailForm table input,
   #mailForm table textarea{
     width:200px;
   }
+}
+
+/*--------------------------------
+ thank_you.html
+---------------------------------*/
+.rtnbtn{
+  /*矢印の基点とするためrelativeを指定*/
+  position: relative;
+  /*ボタンの形状*/
+  border: 2px solid #555;
+  padding: 8px 30px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  outline: none;
+  /*アニメーションの指定*/
+  transition: all .2s linear;
+}
+.rtnbtn:hover{background:#ffae0f;}
+/*矢印と下線の形状*/
+.rtnbtn::before{
+  content:"";
+  /*絶対配置で下線の位置を決める*/
+  position: absolute;
+  top:50%;
+  left:-26px;
+  /*下線の形状*/
+  width:41px;
+  height:2px;
+  background:#333;
+  /*アニメーションの指定*/
+  transition: all .2s linear;
+}
+.rtnbtn::after{
+  content:"";
+  /*絶対配置で矢印の位置を決める*/
+  position: absolute;
+  top: 21%;
+  left: -21px;
+  /*矢印の形状*/
+  width:2.4px;
+  height:13.4px;
+  background:#333;
+  transform:skewX(135deg);
+  /*アニメーションの指定*/
+  transition: all .2s linear;
+}
+@media screen and (max-width:640px) {.rtnbtn::after{top: 18%;}}
+/*hoverした際の移動*/
+.rtnbtn:hover::before{left:-30px;}
+.rtnbtn:hover::after{left:-25px;}
+
+#thanks{
+  vertical-align:middle; 
+  padding: 70px 0;
+  text-align: center;
+}
+#thanks p{
+  margin: 30px;
+}
+.sentMail::before{
+  background-image: url("../img/icon/email-svgrepo-com.svg");
+  content: '';
+  display: inline-block;
+  width: 15em;
+  height: 15em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
