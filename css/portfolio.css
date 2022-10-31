@@ -178,7 +178,7 @@ section:nth-child(2n){
   background-position: center;
 }
 .icon{
-  padding: 1rem 1.6rem 0rem;
+  padding: 0rem 1.6rem 0rem;
   display: inline-block;
   align-items: center;
   vertical-align: middle;
