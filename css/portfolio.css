@@ -229,7 +229,7 @@ form button{
   width:100%;
 }
 #mailForm table textarea{
-  rows = 4;
+  height: 4em;
   resize: vertical;
 }
 @media screen and (max-width:640px) {
