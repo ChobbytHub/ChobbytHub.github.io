@@ -1,9 +1,10 @@
 /*--------------------------------
  import
 ---------------------------------*/
-document.write('<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>');
-document.write('<script src="https://www.google.com/recaptcha/api.js" async defer></script>');
-document.write('<script src="js/reCAPTCHA_Sizer.js"></script>');
+document.body.insertAdjacentHTML('beforeend', '<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+');
+document.body.insertAdjacentHTML('beforeend', '<script src="https://www.google.com/recaptcha/api.js" async defer></script>');
+document.body.insertAdjacentHTML('beforeend', '<script src="js/reCAPTCHA_Sizer.js"></script>');
 /*--------------------------------
  gnav
 ---------------------------------*/
