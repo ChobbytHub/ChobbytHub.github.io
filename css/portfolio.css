@@ -37,7 +37,8 @@ h4{
 }
 p{
   font-size:1.6rem;
-  margin-top:1.25rem;  
+  margin-top:1.25rem;
+  transform: rotate(0.03deg);
 }
 @media screen and (max-width: 640px) {
   html{
@@ -223,6 +224,10 @@ form button{
   width:100%;
   text-align: center;
   padding:15px;
+  transform: rotate(0.03deg);
+}
+#mailForm td{
+  transform: rotate(0.03deg);
 }
 #mailForm table input,
 #mailForm table textarea{
