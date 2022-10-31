@@ -1,9 +1,4 @@
 /*--------------------------------
- import
----------------------------------*/
-document.body.insertAdjacentHTML('beforeend', '<script src="https://www.google.com/recaptcha/api.js" async defer></script>');
-document.body.insertAdjacentHTML('beforeend', '<script src="js/reCAPTCHA_Sizer.js"></script>');
-/*--------------------------------
  gnav
 ---------------------------------*/
 //基準点の準備
