@@ -37,7 +37,8 @@ h4{
 }
 p{
   font-size:1.6rem;
-  margin-top:1.25rem;  
+  margin-top:1.25rem;
+  transform: rotate(0.03deg);
 }
 @media screen and (max-width: 640px) {
   html{
@@ -177,7 +178,7 @@ section:nth-child(2n){
   background-position: center;
 }
 .icon{
-  padding: 1rem 1.6rem 0rem;
+  padding: 0rem 1.6rem 0rem;
   display: inline-block;
   align-items: center;
   vertical-align: middle;
@@ -209,10 +210,6 @@ form button{
   margin-top: 50px;
   background:#fff7e7; 
 }
-.g-recaptcha{
-  transform-origin: 0% 0%;
-  width:300px;
-}
 #mailForm table{
   text-align: left;
   width:75%;
@@ -223,10 +220,22 @@ form button{
   width:100%;
   text-align: center;
   padding:15px;
+  transform: rotate(0.03deg);
+}
+#mailForm td.rotate{
+  transform: rotate(0.03deg);
 }
 #mailForm table input,
 #mailForm table textarea{
   width:100%;
+}
+#mailForm table textarea{
+  height: 4em;
+  resize: vertical;
+}
+.g-recaptcha{
+  transform-origin: 0% 0%;
+  width:300px;
 }
 @media screen and (max-width:640px) {
   #mailForm{
