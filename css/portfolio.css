@@ -73,13 +73,15 @@ p{
 }
 div.header{margin-top: 70px;}
 .container{
-  height: 300px;
-  background-image: url(../img/header.jpg);
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
   display: grid;
   place-items: center;
+}
+.header .container{
+  height: 300px;
+  background-image: url(../img/header.jpg);
 }
 .box{margin: auto;}
 /*--------------------------------
@@ -157,14 +159,15 @@ section:nth-child(2n){background:#fff7e7;}
 .icon::before {
   content: '';
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 5rem;
+  height: 5rem;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  margin: 1.6rem 0rem 0rem;
 }
 .icon{
-  padding: 1rem 1.6rem 0rem;
+  padding: 0rem 1.6rem 0rem;
   display: inline-block;
   align-items: center;
   vertical-align: middle;
