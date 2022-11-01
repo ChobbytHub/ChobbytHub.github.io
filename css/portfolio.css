@@ -39,7 +39,7 @@ h3{
   margin: 0 0 30px 0;
 }
 h4{
-  font-size:2rem;
+  font-size:2.4rem;
   text-align: center;
   margin: 0 0 30px 0;
   transform: rotate(0.03deg);
@@ -48,7 +48,12 @@ p{
   font-size:1.6rem;
   margin-top:1.25rem;
   transform: rotate(0.03deg);
+  width: 85%;
+  margin: 0 auto;
+  max-width: 800px;
 }
+h3 mark{background:linear-gradient(172deg, transparent 65%, #ffae0f 65%, #ffae0f 100%);}
+h4 mark{background:linear-gradient(transparent 65%, #ffae0f 120%);}
 @media screen and (max-width: 640px) {
   html{font-size: 8px;}
   h1{font-size: 1rem;}
@@ -119,9 +124,9 @@ nav ul{
 /*--------------------------------
  footer
 ---------------------------------*/
+footer{background:#333333;}
 footer nav,
 small{
-  background:#333333;
   color:#ffffff;
   display: block;
   text-align: center;
@@ -143,6 +148,11 @@ footer nav ul li a:hover{
   border-bottom: solid 2px #ffae0f; 
 }
 footer ul{padding-inline-start: 0px;}
+footer small nav ul li a{padding-top:0;}
+footer small nav ul li a:hover{padding-top:0;}
+footer small nav{padding:0;}
+footer small li+ li {border-left: 1px solid #fff;}
+small.notHome{padding-top: 30px;}
 /*--------------------------------
  section
 ---------------------------------*/
@@ -176,7 +186,6 @@ section:nth-child(2n){background:#fff7e7;}
 /*--------------------------------
  contact
 ---------------------------------*/
-.contact p{text-align: center;}
 .LinkedIn{
   display:inline;
   height: 1em;
@@ -236,7 +245,12 @@ form button{margin: 1rem 0 3rem;}
     width:200px;
   }
 }
-
+/*--------------------------------
+ privacy-policy.html
+---------------------------------*/
+.privacy-policy{font-size: 4rem;}
+.right{text-align: right;}
+.FuzzyBubbles{font-family: 'Fuzzy Bubbles', cursive;}
 /*--------------------------------
  thank_you.html
 ---------------------------------*/
@@ -294,7 +308,8 @@ form button{margin: 1rem 0 3rem;}
   text-align: center;
 }
 #thanks p{
-  margin: 30px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 .sentMail::before{
   background-image: url("../img/icon/email-svgrepo-com.svg");
