@@ -168,7 +168,7 @@ section:nth-child(2n){background:#fff7e7;}
 /*--------------------------------
  icon
 ---------------------------------*/
-.icon.profile::before{background-image: url("../img/icon/Large/id-card.svg");}
+.icon.about::before{background-image: url("../img/icon/Large/id-card.svg");}
 .icon.skills::before{background-image: url("../img/icon/Large/macbook-pro.svg");}
 .icon.works::before{background-image: url("../img/icon/Large/file-2.svg");}
 .icon.contact::before{background-image: url("../img/icon/Large/envelope.svg");}
