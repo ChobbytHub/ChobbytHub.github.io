@@ -49,6 +49,12 @@ h4{
   margin: 0 0 30px 0;
   transform: rotate(0.03deg);
 }
+h5{
+  font-size:2rem;
+  text-align: center;
+  margin: 0.5em;
+  transform: rotate(0.03deg);
+}
 p{
   font-size:1.6rem;
   margin-top:1.25rem;
@@ -187,6 +193,39 @@ section:nth-child(2n){background:#fff7e7;}
   display: inline-block;
   align-items: center;
   vertical-align: middle;
+}
+/*--------------------------------
+ about
+---------------------------------*/
+.two-column-wrapper{
+  width: 85%;
+  margin: 0 auto;
+  max-width: 800px;
+  display:flex;
+}
+.two-column-wrapper .box{
+  width: 25%;
+  height: 25%;
+  margin: auto 0;
+  min-width: 100px;
+}
+.two-column-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.two-column-text{
+  width: 90%;
+  margin-right: 0;
+  padding-left: 5%;
+}
+.two-column-text h5{
+  text-align: left;
+  margin-left: 0;
+}
+.two-column-text h5 .small{
+  font-size: 0.6em;
 }
 /*--------------------------------
  contact
