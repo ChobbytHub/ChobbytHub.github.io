@@ -246,7 +246,7 @@ form button{margin: 1rem 0 3rem;}
 #mailForm{
   width:400px;
   text-align: center;
-  border: solid #333333;
+  border:transparent;
   margin:auto;
   margin-top: 50px;
   background:#fff7e7; 
