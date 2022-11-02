@@ -69,6 +69,7 @@ h4 mark{background:linear-gradient(transparent 65%, #ffae0f 120%);}
   html{font-size: 8px;}
   h1{font-size: 1rem;}
   h2{font-size: 7rem;}
+  p{width: 95%}
 }
 
 /*--------------------------------
@@ -202,6 +203,9 @@ section:nth-child(2n){background:#fff7e7;}
   margin: 0 auto;
   max-width: 800px;
   display:flex;
+}
+@media screen and (max-width: 640px) {
+  .two-column-wrapper{width: 95%;}
 }
 .two-column-wrapper .box{
   width: 25%;
