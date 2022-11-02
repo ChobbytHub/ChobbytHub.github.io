@@ -60,13 +60,25 @@ $(window).resize(function() {
 });
 
 /*--------------------------------
+ form label
+---------------------------------*/
+$('input, textarea').on('focusin', function() {
+  $(this).parent().find('label').addClass('active');
+});
+
+$('input, textarea').on('focusout', function() {
+  if (!this.value) {
+    $(this).parent().find('label').removeClass('active');
+  }
+});
+/*--------------------------------
  reCAPTCHA_Sizer
 ---------------------------------*/
 function reCAPTCHA_Sizer(){
-  var $w = $("#mailForm table").width(); //全体の幅
+  var $w = $(".recaptcha-box").width(); //全体の幅
   var $v = $w / 310; //幅に対するreCAPTCHAの比率
   var $h = 78 * $v; //高さ
-  if($w < 500) {
+  if($w < 300) {
     $(".g-recaptcha").css("transform","scale(" + $v + ")");
     $(".g-recaptcha > div").css("height",$h);
   } else {

@@ -72,12 +72,21 @@
         <p>メッセージやお問い合わせは <a href="https://www.linkedin.com/in/chobbyedin/"><img class="LinkedIn" src="img/icon/LI-Logo.png"></a>または以下のフォームからお気軽にお送りください！</p>
       </div>
       <form id="mailForm" action="https://ssgform.com/s/CR2iSndWmu1R" method="post">
-        <table>
-          <tr><td><input type="text" name="お名前" required="required" placeholder="name" /></td></tr>
-          <tr><td><input type="email" name="メールアドレス" required="required" placeholder="email address" /></td></tr>
-          <tr><td><textarea name="お問い合わせ内容" required="required" placeholder="message"></textarea></td></tr>
-          <tr><td><div class="g-recaptcha" data-sitekey="6LcJD8IiAAAAAB8whaFBaDeRifEN9wx0BNsrZca6"></div></td></tr>
-        </table>
+        <div class="form-wrap">
+          <div>
+            <label>Name</label>
+            <input type="text" name="お名前" required="required" placeholder="" /></td></tr>
+          </div>
+          <div>
+            <label>Email</label>
+            <input type="email" name="メールアドレス" required="required" placeholder="" /></td></tr>
+          </div>
+          <div>
+            <label>Message</label>
+            <textarea name="お問い合わせ内容" required="required" placeholder=""></textarea></td></tr>
+          </div>
+        </div>
+        <div class="recaptcha-box"><div class="g-recaptcha" data-sitekey="6LcJD8IiAAAAAB8whaFBaDeRifEN9wx0BNsrZca6"></div></div>
         <button type="submit">SEND</button>
       </form>
     <!--/area4--></section>
