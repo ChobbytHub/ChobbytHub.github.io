@@ -88,6 +88,7 @@ h4 mark{background:linear-gradient(transparent 65%, #ffae0f 120%);}
   background:#333333;
   color:#ffffff;
   text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 div.header{margin-top: 70px;}
 .container{
