@@ -15,7 +15,7 @@ html{
 body{
   font-size: 1.6em;
   margin:0px;
-  background-color: #fff0d3; 
+  background-color: #333; 
 }
 main{color:#333333;}
 a:link{
@@ -67,9 +67,13 @@ h3 mark{background:linear-gradient(172deg, transparent 65%, #ffae0f 65%, #ffae0f
 h4 mark{background:linear-gradient(transparent 65%, #ffae0f 120%);}
 @media screen and (max-width: 640px) {
   html{font-size: 8px;}
-  h1{font-size: 1rem;}
-  h2{font-size: 7rem;}
+  h1{
+    font-size: 0.5rem;
+    margin-left: 1.6rem
+  }
+  h2{font-size: 6rem;}
   p{width: 95%}
+  ul{padding-inline-start: 20px;}
 }
 
 /*--------------------------------
@@ -88,7 +92,7 @@ h4 mark{background:linear-gradient(transparent 65%, #ffae0f 120%);}
   background:#333333;
   color:#ffffff;
   text-align: center;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
 }
 div.header{margin-top: 70px;}
 .container{
@@ -171,7 +175,8 @@ small.notHome{padding-top: 30px;}
 ---------------------------------*/
 section{padding:30px;}
 section:nth-child(1){padding:100px 30px 30px;}
-section:nth-child(2n){background:#fff7e7;}
+section:nth-child(2n){background-color:#fff7e7;}
+section:nth-child(2n+1){background-color:#fff0d3;}
 .header section{padding:30px;}
 /*--------------------------------
  icon
@@ -292,7 +297,8 @@ form button{margin: 0 0 3rem;}
 /*--------------------------------
  privacy-policy.html
 ---------------------------------*/
-.privacy-policy{font-size: 4rem;}
+.privacy-policy h3{font-size: 3rem;}
+.privacy-policy h4{font-size: 2rem;}
 .right{text-align: right;}
 .FuzzyBubbles{font-family: 'Fuzzy Bubbles', cursive;}
 /*--------------------------------
@@ -354,6 +360,12 @@ form button{margin: 0 0 3rem;}
 #thanks p{
   margin-bottom: 30px;
   text-align: center;
+}
+#thanks a:link{
+  color: #333;
+}
+#thanks a:visited{
+  color: #333;
 }
 .sentMail::before{
   background-image: url("../img/icon/email-svgrepo-com.svg");
