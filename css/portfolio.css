@@ -247,7 +247,7 @@ section:nth-child(2n){background:#fff7e7;}
   border-bottom: solid 2px #0077b5;
   padding: 1.5px 0 1.5px;
 }
-form button{margin: 1rem 0 3rem;}
+form button{margin: 0 0 3rem;}
 #mailForm{
   width:400px;
   text-align: center;
