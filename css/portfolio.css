@@ -263,7 +263,7 @@ form button{margin: 1rem 0 3rem;}
   margin-top: 20px;
   padding: 10px;
   border-collapse: separate;
-  border-spacing: 0 1rem;
+  border-spacing: 0 2rem;
 }
 #mailForm table input,
 #mailForm table textarea{
