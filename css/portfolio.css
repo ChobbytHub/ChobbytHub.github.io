@@ -262,13 +262,6 @@ form button{margin: 1rem 0 3rem;}
   margin:auto;
   padding: 10px;
 }
-#mailForm th{
-  width:100%;
-  text-align: center;
-  padding:15px;
-  transform: rotate(0.03deg);
-}
-#mailForm td.rotate{transform: rotate(0.03deg);}
 #mailForm table input,
 #mailForm table textarea{
   width:100%;
