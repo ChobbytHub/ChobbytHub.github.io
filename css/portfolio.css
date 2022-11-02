@@ -68,7 +68,7 @@ h4 mark{background:linear-gradient(transparent 65%, #ffae0f 120%);}
 @media screen and (max-width: 640px) {
   html{font-size: 8px;}
   h1{
-    font-size: 0.5rem;
+    font-size: 1rem;
     margin-left: 1.6rem
   }
   h2{font-size: 6rem;}
@@ -254,7 +254,7 @@ section:nth-child(2n+1){background-color:#fff0d3;}
 }
 form button{margin: 0 0 3rem;}
 #mailForm{
-  width:400px;
+  width:85%;
   text-align: center;
   border:transparent;
   margin:auto;
@@ -282,7 +282,7 @@ form button{margin: 0 0 3rem;}
   width:300px;
 }
 @media screen and (max-width:640px) {
-  #mailForm{width:300px;}
+  #mailForm{width:95%;}
   .g-recaptcha{
     transform-origin: 0% 0%;
     width:200px;
