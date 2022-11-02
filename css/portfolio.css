@@ -275,7 +275,7 @@ form button{margin: 1rem 0 3rem;}
   width:100%;
 }
 #mailForm table textarea{
-  height: em;
+  height: 6em;
   resize: vertical;
 }
 .g-recaptcha{
