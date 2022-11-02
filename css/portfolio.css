@@ -322,6 +322,54 @@ label{
     width:200px;
   }
 }
+.sndbtn{
+  /*矢印の基点とするためrelativeを指定*/
+  position: relative;
+  /*ボタンの形状*/
+  background:#fff0d3;
+  border: 2px solid #555;
+  padding: 8px 30px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  outline: none;
+  /*アニメーションの指定*/
+  transition: all .2s linear;
+}
+.sndbtn:hover{background:#ffae0f;}
+/*矢印と下線の形状*/
+.sndbtn::before{
+  content:"";
+  /*絶対配置で下線の位置を決める*/
+  position: absolute;
+  top:50%;
+  right:-26px;
+  /*下線の形状*/
+  width:41px;
+  height:2px;
+  background:#333;
+  /*アニメーションの指定*/
+  transition: all .2s linear;
+}
+.sndbtn::after{
+  content:"";
+  /*絶対配置で矢印の位置を決める*/
+  position: absolute;
+  top: 21%;
+  right: -21px;
+  /*矢印の形状*/
+  width:2.4px;
+  height:13.4px;
+  background:#333;
+  transform:skewX(45deg);
+  /*アニメーションの指定*/
+  transition: all .2s linear;
+}
+@media screen and (max-width:640px) {.sndbtn::after{top: 17%;}}
+/*hoverした際の移動*/
+.sndbtn:hover::before{right:-30px;}
+.sndbtn:hover::after{right:-25px;}
 /*--------------------------------
  privacy-policy.html
 ---------------------------------*/
@@ -336,6 +384,7 @@ label{
   /*矢印の基点とするためrelativeを指定*/
   position: relative;
   /*ボタンの形状*/
+  background:#fff7e7;
   border: 2px solid #555;
   padding: 8px 30px;
   display: inline-block;
