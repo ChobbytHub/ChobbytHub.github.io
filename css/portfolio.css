@@ -155,7 +155,6 @@ footer nav ul a{
   padding:15px 10px 1.5px;
   border-bottom: solid 2px #333333;
   transition:all 0.3s;
-  transform: rotate(0.03deg);
 }
 footer nav ul li a:hover{
   padding:15px 10px 1.5px;
