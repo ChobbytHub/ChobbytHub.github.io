@@ -19,6 +19,11 @@ body{
   background-color: #333; 
 }
 main{color:#333333;}
+.container{
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 a:link{
   color: #87b0ff;
 }
@@ -62,20 +67,18 @@ p{
   font-size:1.6rem;
   margin-top:1.25rem;
   transform: rotate(0.03deg);
-  width: 85%;
   margin: 0 auto;
-  max-width: 1000px;
 }
 h3 mark{background:linear-gradient(172deg, transparent 65%, #ffae0f 65%, #ffae0f 100%);}
 h4 mark{background:linear-gradient(transparent 65%, #ffae0f 120%);}
 @media screen and (max-width: 640px) {
   html{font-size: 8px;}
+  .container{width: 95%;}
   h1{
     font-size: 1rem;
     margin-left: 1.6rem
   }
   h2{font-size: 8rem;}
-  p{width: 95%}
   ul{padding-inline-start: 20px;}
 }
 mark{padding:0;}
@@ -210,39 +213,22 @@ section:nth-child(2n+1){background-color:#fff0d3;}
 /*--------------------------------
  about
 ---------------------------------*/
-.two-column-wrapper{
-  width: 85%;
-  margin: 0 auto;
-  max-width: 1000px;
-  display:flex;
-}
-@media screen and (max-width: 640px) {
-  .two-column-wrapper{width: 95%;}
-}
-.two-column-wrapper .box{
-  width: 25%;
-  height: 25%;
-  margin: auto 0;
-  min-width: 100px;
-}
-.two-column-img img{
+#about-img{
   width: 100%;
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center;
+  margin: auto;
+  max-width: 150px;
 }
-.two-column-text{
-  width: 90%;
-  margin-right: 0;
-  padding-left: 5%;
+@media screen and (min-width:768px) {
+  .about-text h5{
+    text-align: left;
+    margin-left: 0;
+  }
 }
-.two-column-text h5{
-  text-align: left;
-  margin-left: 0;
-}
-.two-column-text h5 .small{
-  font-size: 0.6em;
-}
+.about-text h5 .small{font-size: 0.6em;}
 /*--------------------------------
  contact
 ---------------------------------*/
