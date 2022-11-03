@@ -6,7 +6,7 @@
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
-*,*::before,*::after{box-sizing:border-box}*{margin:0}html,body{height:100%}body{line-height:1.5;-webkit-font-smoothing:antialiased}img,picture,video,canvas,svg{display:block;max-width:100%}input,button,textarea,select{font:inherit}p,h1,h2,h3,h4,h5,h6{overflow-wrap:break-word}#root,#__next{isolation:isolate}
+*,*::before,*::after{box-sizing:border-box}*{margin:0}html,body{height:100%}body{line-height:1.5;-webkit-font-smoothing:antialiased}img,picture,video,canvas,svg{display:block;max-width:100%}input,button,textarea,select{font:inherit}p,h1,h2,h3,h4,h5,h6{overflow-wrap:break-word}#root,#-next{isolation:isolate}
 
 
 html{
@@ -73,7 +73,7 @@ h3 mark{background:linear-gradient(172deg, transparent 65%, #ffae0f 65%, #ffae0f
 h4 mark{background:linear-gradient(transparent 65%, #ffae0f 120%);}
 @media screen and (max-width: 640px) {
   html{font-size: 8px;}
-  .container{width: 95%;}
+  .container-wrap{width: 95%;}
   h1{
     font-size: 1rem;
     margin-left: 1.6rem
@@ -229,6 +229,52 @@ section:nth-child(2n+1){background-color:#fff0d3;}
   }
 }
 .about-text h5 .small{font-size: 0.6em;}
+
+/*--------------------------------
+ works
+---------------------------------*/
+.works-card {
+  background-color: #fcfcfc;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.works-card-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works-card-title {
+  padding: 1rem 1rem 0;
+  font-size: 1.25rem;
+  order: 1;
+}
+
+.works-card-thumbnail {
+  margin: 0;
+  order: 0;
+}
+
+.works-card-image {
+  width: 100%;
+}
+
+.works-card-body {
+  padding: 1rem;
+}
+
+.works-card-text {
+  font-size: .75rem;
+}
+
+.works-card-text + .works-card-text {
+  margin-top: .5rem;
+}
+
+.works-card-footer {
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+}
+
 /*--------------------------------
  contact
 ---------------------------------*/
