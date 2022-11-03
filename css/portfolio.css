@@ -1,5 +1,6 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap');
 /*
   Josh's Custom CSS Reset
@@ -25,7 +26,7 @@ a:visited{
   color: #3b7eff;
 }
 h1{
-  font-family: 'Fuzzy Bubbles', cursive;
+  font-family: 'Lobster', cursive;
   font-size:2rem;
   margin-left: 3.2rem;
 }
@@ -33,12 +34,14 @@ h1 a{text-decoration:none;}
 h1 a:link{color: #fff;}
 h1 a:visited{color: #fff;}
 h2{
-  font-family: 'Fuzzy Bubbles', cursive;
-  font-size:8rem;
+  font-family: 'Lobster', cursive;
+  font-size:10rem;
   color:#ffffff;
   text-align:center;
 }
 h3{
+  font-family: 'Rajdhani', sans-serif;
+  font-weight:bold;
   font-size:5rem;
   text-align: center;
   margin: 0 0 30px 0;
@@ -61,7 +64,7 @@ p{
   transform: rotate(0.03deg);
   width: 85%;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1000px;
 }
 h3 mark{background:linear-gradient(172deg, transparent 65%, #ffae0f 65%, #ffae0f 100%);}
 h4 mark{background:linear-gradient(transparent 65%, #ffae0f 120%);}
@@ -71,11 +74,11 @@ h4 mark{background:linear-gradient(transparent 65%, #ffae0f 120%);}
     font-size: 1rem;
     margin-left: 1.6rem
   }
-  h2{font-size: 6rem;}
+  h2{font-size: 8rem;}
   p{width: 95%}
   ul{padding-inline-start: 20px;}
 }
-
+mark{padding:0;}
 /*--------------------------------
  header
 ---------------------------------*/
@@ -92,24 +95,27 @@ h4 mark{background:linear-gradient(transparent 65%, #ffae0f 120%);}
   background:#333333;
   color:#ffffff;
   text-align: center;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 div.header{margin-top: 70px;}
-.container{
+.header-img{
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
   display: grid;
   place-items: center;
 }
-.header .container{
-  height: 300px;
+.header .header-img{
+  height: 500px;
   background-image: url(../img/header.jpg);
 }
 .box{margin: auto;}
 /*--------------------------------
  navigation
 ---------------------------------*/
+nav{
+  font-family: 'Rajdhani', sans-serif;
+}
 #g-nav{
   font-size:1.6rem;
   margin-right: 2rem;
@@ -193,7 +199,7 @@ section:nth-child(2n+1){background-color:#fff0d3;}
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  margin: 1.6rem 0rem 0rem;
+  margin: 1rem 0rem 0rem;
 }
 .icon{
   padding: 0rem 1.6rem 0rem;
@@ -207,7 +213,7 @@ section:nth-child(2n+1){background-color:#fff0d3;}
 .two-column-wrapper{
   width: 85%;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1000px;
   display:flex;
 }
 @media screen and (max-width: 640px) {
@@ -240,6 +246,9 @@ section:nth-child(2n+1){background-color:#fff0d3;}
 /*--------------------------------
  contact
 ---------------------------------*/
+@media screen and (min-width:840px) {
+  .contact p{text-align: center;}
+}
 .LinkedIn{
   display:inline;
   height: 1em;
@@ -255,6 +264,7 @@ section:nth-child(2n+1){background-color:#fff0d3;}
 form button{margin: 2rem 0 3rem;}
 #mailForm{
   width:85%;
+  max-width: 1000px;
   text-align: center;
   border:transparent;
   margin:auto;
@@ -373,10 +383,14 @@ label{
 /*--------------------------------
  privacy-policy.html
 ---------------------------------*/
-.privacy-policy h3{font-size: 3rem;}
+.privacy-policy h3{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 3rem;
+  transform: rotate(0.03deg);
+}
 .privacy-policy h4{font-size: 2rem;}
 .right{text-align: right;}
-.FuzzyBubbles{font-family: 'Fuzzy Bubbles', cursive;}
+.Lobster{font-family: 'Lobster', cursive;}
 /*--------------------------------
  thank_you.html
 ---------------------------------*/
