@@ -81,6 +81,7 @@ h4 mark{background:linear-gradient(transparent 65%, #ffae0f 120%);}
   h2{font-size: 8rem;}
   ul{padding-inline-start: 20px;}
 }
+dl, ol, ul {margin-bottom: 0;}
 mark{padding:0;}
 /*--------------------------------
  header
@@ -239,13 +240,18 @@ section:nth-child(2n+1){background-color:#fff0d3;}
   aspect-ratio: 3 / 4;
   background-color: #fcfcfc;
   box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  position: relative;
+  padding: 0; /*1枚のときのみ*/
 }
 
 .works-card-header {
   display: flex;
   flex-wrap: wrap;
 }
-
+.works-card-header h4{
+  margin:auto;
+  margin-bottom: 1rem;
+}
 .works-card-title {
   padding: 1rem 1rem 0;
   font-size: 1.25rem;
@@ -263,21 +269,47 @@ section:nth-child(2n+1){background-color:#fff0d3;}
 
 .works-card-body {
   padding: 1rem;
+  position: relative;
+  height: 35%;
 }
 
 .works-card-text {
   font-size: .75rem;
 }
 
-.works-card-text + .works-card-text {
-  margin-top: .5rem;
+.works-card-skill {
+  font-size: .75rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  padding:1rem;
 }
 
 .works-card-footer {
   padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.works-card-footer-line {
+  padding-top: 1rem;
   border-top: 1px solid #ddd;
+  width: 100%;
+  text-align: center;
 }
 
+.works-card-text a img{
+  width:2rem;
+  margin: auto;
+}
+.works-card-text a img:hover{
+  opacity:.5;
+}
+
+.works-card-one{
+  width: 250px;
+}
 /*--------------------------------
  contact
 ---------------------------------*/
