@@ -14,6 +14,7 @@ html{
   font-family: 'M PLUS 1p', sans-serif;
 }
 body{
+  color:#333333;
   font-size: 1.6em;
   margin:0px;
   background-color: #333; 
@@ -36,12 +37,12 @@ h1{
   margin-left: 3.2rem;
 }
 h1 a{text-decoration:none;}
-h1 a:link{color: #fff;}
-h1 a:visited{color: #fff;}
+h1 a:link{color: #fcfcfc;}
+h1 a:visited{color: #fcfcfc;}
 h2{
   font-family: 'Lobster', cursive;
   font-size:10rem;
-  color:#ffffff;
+  color:#fcfcfc;
   text-align:center;
 }
 h3{
@@ -71,18 +72,15 @@ p{
 }
 h3 mark{background:linear-gradient(172deg, transparent 65%, #ffae0f 65%, #ffae0f 100%);}
 h4 mark{background:linear-gradient(transparent 65%, #ffae0f 120%);}
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   html{font-size: 8px;}
   .container-wrap{width: 95%;}
-  h1{
-    font-size: 1rem;
-    margin-left: 1.6rem
-  }
-  h2{font-size: 8rem;}
+  h2{font-size: 9rem;}
   ul{padding-inline-start: 20px;}
 }
 dl, ol, ul {margin-bottom: 0;}
 mark{padding:0;}
+.smaller{font-size: 0.7em;}
 /*--------------------------------
  header
 ---------------------------------*/
@@ -97,7 +95,7 @@ mark{padding:0;}
   justify-content: space-between;
   align-items: center;
   background:#333333;
-  color:#ffffff;
+  color:#fcfcfc;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
@@ -139,24 +137,24 @@ nav ul{
 }
 #g-nav ul li.current a,
 #g-nav ul li a:hover{
-  color:#ffffff;
+  color:#fcfcfc;
   padding:1.5px 10px 1.5px;
   border-bottom: solid 2px #ffae0f; 
 }
 
 @media screen and (max-width:768px) {
   #g-nav ul li a:hover{color: #666666;}
-  #g-nav ul li.current a {color:#ffffff;}
+  #g-nav ul li.current a {color:#fcfcfc;}
 }
 /*--------------------------------
  footer
 ---------------------------------*/
-footer a:link{color: #fff;}
-footer a:visited{color: #fff;}
+footer a:link{color: #fcfcfc;}
+footer a:visited{color: #fcfcfc;}
 footer{background:#333333;}
 footer nav,
 small{
-  color:#ffffff;
+  color:#fcfcfc;
   display: block;
   text-align: center;
   padding:10px;
@@ -178,7 +176,7 @@ footer ul{padding-inline-start: 0px;}
 footer small nav ul li a{padding-top:0;}
 footer small nav ul li a:hover{padding-top:0;}
 footer small nav{padding:0;}
-footer small li+ li {border-left: 1px solid #fff;}
+footer small li+ li {border-left: 1px solid #fcfcfc;}
 small.notHome{padding-top: 30px;}
 /*--------------------------------
  section
@@ -391,7 +389,7 @@ label{
   transform-origin: 0% 0%;
   width:300px;
 }
-@media screen and (max-width:640px) {
+@media screen and (max-width:768px) {
   #mailForm{width:95%;}
   .recaptcha-box{width: 200px;}
   .g-recaptcha{
@@ -443,7 +441,7 @@ label{
   /*アニメーションの指定*/
   transition: all .2s linear;
 }
-@media screen and (max-width:640px) {.sndbtn::after{top: 17%;}}
+@media screen and (max-width:768px) {.sndbtn::after{top: 17%;}}
 /*hoverした際の移動*/
 .sndbtn:hover::before{right:-30px;}
 .sndbtn:hover::after{right:-25px;}
@@ -505,7 +503,7 @@ label{
   /*アニメーションの指定*/
   transition: all .2s linear;
 }
-@media screen and (max-width:640px) {.rtnbtn::after{top: 18%;}}
+@media screen and (max-width:768px) {.rtnbtn::after{top: 18%;}}
 /*hoverした際の移動*/
 .rtnbtn:hover::before{left:-30px;}
 .rtnbtn:hover::after{left:-25px;}
