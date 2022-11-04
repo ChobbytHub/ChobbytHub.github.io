@@ -9,11 +9,9 @@
 *,*::before,*::after{box-sizing:border-box}*{margin:0}html,body{height:100%}body{line-height:1.5;-webkit-font-smoothing:antialiased}img,picture,video,canvas,svg{display:block;max-width:100%}input,button,textarea,select{font:inherit}p,h1,h2,h3,h4,h5,h6{overflow-wrap:break-word}#root,#-next{isolation:isolate}
 
 
-html{
-  font-size: 10px;
-  font-family: 'M PLUS 1p', sans-serif;
-}
+html{font-size: 10px;}
 body{
+  font-family: 'M PLUS 1p', sans-serif;
   color:#333333;
   font-size: 1.6em;
   margin:0px;
@@ -228,6 +226,25 @@ section:nth-child(2n+1){background-color:#fff0d3;}
   }
 }
 .about-text h5 .small{font-size: 0.6em;}
+/*--------------------------------
+ skills
+---------------------------------*/
+.skills-card {
+  width: 100%;
+  margin: 1rem auto;
+  background-color: #fcfcfc;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+@media screen and (max-width:1023px) {
+  .skills-card {max-width: 334.75px;}
+}
+.skills-card-title {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  order: 1;
+  margin:0;
+}
 
 /*--------------------------------
  works
@@ -237,11 +254,10 @@ section:nth-child(2n+1){background-color:#fff0d3;}
   margin: 1rem auto;
   aspect-ratio: 3 / 4;
   background-color: #fcfcfc;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   position: relative;
   padding: 0; /*1枚のときのみ*/
 }
-
 .works-card-header {
   display: flex;
   flex-wrap: wrap;
@@ -252,29 +268,21 @@ section:nth-child(2n+1){background-color:#fff0d3;}
 }
 .works-card-title {
   padding: 1rem 1rem 0;
-  font-size: 1.25rem;
+  font-size: 1.6rem;
+  font-weight: bold;
   order: 1;
 }
-
 .works-card-thumbnail {
   margin: 0;
   order: 0;
 }
-
-.works-card-image {
-  width: 100%;
-}
-
+.works-card-image {width: 100%;}
 .works-card-body {
   padding: 1rem;
   position: relative;
   height: 35%;
 }
-
-.works-card-text {
-  font-size: .75rem;
-}
-
+.works-card-text {font-size: .75rem;}
 .works-card-skill {
   font-size: .75rem;
   font-weight: bold;
@@ -282,7 +290,6 @@ section:nth-child(2n+1){background-color:#fff0d3;}
   width: 100%;
   padding:1rem;
 }
-
 .works-card-footer {
   padding: 1rem;
   position: absolute;
@@ -292,22 +299,16 @@ section:nth-child(2n+1){background-color:#fff0d3;}
 }
 .works-card-footer-line {
   padding-top: 1rem;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #ffae0f;
   width: 100%;
   text-align: center;
 }
-
 .works-card-text a img{
   width:2rem;
   margin: auto;
 }
-.works-card-text a img:hover{
-  opacity:.5;
-}
-
-.works-card-one{
-  width: 250px;
-}
+.works-card-text a img:hover{opacity:.5;}
+.works-card-one{width: 250px;}
 /*--------------------------------
  contact
 ---------------------------------*/
@@ -335,7 +336,7 @@ form button{margin: 2rem 0 3rem;}
   margin:auto;
   margin-top: 5rem;
   background:#fff7e7;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 .form-wrap{
   width:80%;
@@ -402,7 +403,7 @@ label{
   position: relative;
   /*ボタンの形状*/
   background:#fff0d3;
-  border: 2px solid #555;
+  border: 1px solid #555;
   padding: 8px 30px;
   display: inline-block;
   text-align: center;
@@ -421,8 +422,8 @@ label{
   top:50%;
   right:-26px;
   /*下線の形状*/
-  width:41px;
-  height:2px;
+  width:40px;
+  height:1px;
   background:#333;
   /*アニメーションの指定*/
   transition: all .2s linear;
@@ -431,20 +432,20 @@ label{
   content:"";
   /*絶対配置で矢印の位置を決める*/
   position: absolute;
-  top: 21%;
+  top: 22.5%;
   right: -21px;
   /*矢印の形状*/
-  width:2.4px;
-  height:13.4px;
+  width:1px;
+  height:12px;
   background:#333;
   transform:skewX(45deg);
   /*アニメーションの指定*/
   transition: all .2s linear;
 }
-@media screen and (max-width:768px) {.sndbtn::after{top: 17%;}}
+@media screen and (max-width:768px) {.sndbtn::after{top: 18.5%;}}
 /*hoverした際の移動*/
-.sndbtn:hover::before{right:-30px;}
-.sndbtn:hover::after{right:-25px;}
+.sndbtn:hover::before{right:-31px;}
+.sndbtn:hover::after{right:-26px;}
 /*--------------------------------
  privacy-policy.html
 ---------------------------------*/
@@ -464,7 +465,7 @@ label{
   position: relative;
   /*ボタンの形状*/
   background:#fff7e7;
-  border: 2px solid #555;
+  border: 1px solid #555;
   padding: 8px 30px;
   display: inline-block;
   text-align: center;
@@ -483,8 +484,8 @@ label{
   top:50%;
   left:-26px;
   /*下線の形状*/
-  width:41px;
-  height:2px;
+  width:40px;
+  height:1px;
   background:#333;
   /*アニメーションの指定*/
   transition: all .2s linear;
@@ -493,11 +494,11 @@ label{
   content:"";
   /*絶対配置で矢印の位置を決める*/
   position: absolute;
-  top: 21%;
+  top: 22%;
   left: -21px;
   /*矢印の形状*/
-  width:2.4px;
-  height:13.4px;
+  width:1px;
+  height:12px;
   background:#333;
   transform:skewX(135deg);
   /*アニメーションの指定*/
@@ -505,8 +506,8 @@ label{
 }
 @media screen and (max-width:768px) {.rtnbtn::after{top: 18%;}}
 /*hoverした際の移動*/
-.rtnbtn:hover::before{left:-30px;}
-.rtnbtn:hover::after{left:-25px;}
+.rtnbtn:hover::before{left:-31px;}
+.rtnbtn:hover::after{left:-26px;}
 
 #thanks{
   vertical-align:middle; 
