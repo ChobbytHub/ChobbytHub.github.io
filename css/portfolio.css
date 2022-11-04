@@ -232,7 +232,7 @@ section:nth-child(2n+1){background-color:#fff0d3;}
 .skills-card {
   width: 100%;
   margin: 1rem auto;
-  background-color: #fcfcfc;
+  background-color: #fffcf7;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 @media screen and (max-width:1023px) {
@@ -245,7 +245,30 @@ section:nth-child(2n+1){background-color:#fff0d3;}
   order: 1;
   margin:0;
 }
-
+.skills-card-table{
+  width: 90%;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+.skills-card-table td{
+  width: 40%;
+}
+.fas{color:#ffae0f;}
+.far{color:#ffae0f;}
+.skills-card-header-line {
+  border-bottom: 1px solid #ffae0f;
+  width: 90%;
+  margin: auto;
+}
+.skills-card-footer-line {
+  border-top: 1px solid #ffae0f;
+  width: 90%;
+  margin: auto;
+}
+.skills-card-text{
+  padding: 1rem;
+}
 /*--------------------------------
  works
 ---------------------------------*/
@@ -253,7 +276,7 @@ section:nth-child(2n+1){background-color:#fff0d3;}
   width: 90%;
   margin: 1rem auto;
   aspect-ratio: 3 / 4;
-  background-color: #fcfcfc;
+  background-color: #fffcf7;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   position: relative;
   padding: 0; /*1枚のときのみ*/
@@ -335,7 +358,7 @@ form button{margin: 2rem 0 3rem;}
   border:transparent;
   margin:auto;
   margin-top: 5rem;
-  background:#fff7e7;
+  background:#fffcf7;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 .form-wrap{
@@ -354,7 +377,7 @@ label{
   font-size: 1.6rem;
   margin: 0.8rem;
   padding: 0 0.8rem;
-  background-color: #fff7e7;
+  background-color: #fffcf7;
   -webkit-transition: top .2s ease-in-out, 
                       font-size .2s ease-in-out;
   transition: top .2s ease-in-out, 
@@ -370,7 +393,7 @@ label{
   border: 1px solid #333333;
   padding: 0.8rem;
   font-size: 1.6rem;
-  background-color: #fff7e7;
+  background-color: #fffcf7;
   color: #333333;
 }
 .form-wrap input:focus,
@@ -402,9 +425,9 @@ label{
   /*矢印の基点とするためrelativeを指定*/
   position: relative;
   /*ボタンの形状*/
-  background:#fff0d3;
+  background:#fff7e7;
   border: 1px solid #555;
-  padding: 8px 30px;
+  padding: 0.8rem 30px;
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -442,7 +465,7 @@ label{
   /*アニメーションの指定*/
   transition: all .2s linear;
 }
-@media screen and (max-width:768px) {.sndbtn::after{top: 18.5%;}}
+@media screen and (max-width:768px) {.sndbtn::after{top: 16%;}}
 /*hoverした際の移動*/
 .sndbtn:hover::before{right:-31px;}
 .sndbtn:hover::after{right:-26px;}
@@ -466,7 +489,7 @@ label{
   /*ボタンの形状*/
   background:#fff7e7;
   border: 1px solid #555;
-  padding: 8px 30px;
+  padding: 0.8rem 30px;
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -504,7 +527,7 @@ label{
   /*アニメーションの指定*/
   transition: all .2s linear;
 }
-@media screen and (max-width:768px) {.rtnbtn::after{top: 18%;}}
+@media screen and (max-width:768px) {.rtnbtn::after{top: 16%;}}
 /*hoverした際の移動*/
 .rtnbtn:hover::before{left:-31px;}
 .rtnbtn:hover::after{left:-26px;}
