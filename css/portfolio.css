@@ -284,9 +284,13 @@ section:nth-child(2n+1){background-color:#fff0d3;}
   padding: 1rem;
   text-align: center;
 }
-.skills-card-table td{width: 40%;}
-@media screen and (max-width:375px) {
-  .skills-card-table td{width: 25%;}
+.skills-card-table td{width: 25%;}
+@media screen and (max-width:424px) {
+  .skills-card-table td{width: 23%;}
+  .skills-card-table{width: 100%;}
+}
+@media screen and (min-width:1024px) {
+  .skills-card-table td{width: 35%;}
 }
 .fas{color:#ffae0f;}
 .far{color:#ffae0f;}
