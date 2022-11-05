@@ -3,7 +3,6 @@
 ---------------------------------*/
 //基準点の準備
 var elemTop = [];
-
 //現在地を取得するための設定を関数でまとめる
 function PositionCheck(){
     //headerの高さを取得
@@ -13,7 +12,6 @@ function PositionCheck(){
     elemTop[i] =Math.round(parseInt($(this).offset().top-headerH));//追従するheader分の高さ（70px）を引き小数点を四捨五入
   });
 }
-
 //ナビゲーションに現在地のクラスをつけるための設定
 function ScrollAnime() {//スクロールした際のナビゲーションの関数にまとめる
   var scroll = Math.round($(window).scrollTop());
@@ -32,33 +30,28 @@ function ScrollAnime() {//スクロールした際のナビゲーションの関
       $(NavElem[3]).addClass('current');//4つめのliに現在地クラスを付与
     } 
 }
-
 //ナビゲーションをクリックした際のスムーススクロール
 $('#g-nav a, footer nav a').click(function () {
   var elmHash = $(this).attr('href'); //hrefの内容を取得
   var headerH = $("#header").outerHeight(true);//追従するheader分の高さ（70px）を引く
   var pos = Math.round($(elmHash).offset().top-headerH);  //headerの高さを引き小数点を四捨五入
-  $('body,html').animate({scrollTop: pos}, 500);//取得した位置にスクロール※数値が大きいほどゆっくりスクロール
+  $('body,html').animate({scrollTop: pos}, 100);//取得した位置にスクロール※数値が大きいほどゆっくりスクロール
   return false;//リンクの無効化
 });
-
 // 画面をスクロールをしたら動かしたい場合の記述
 $(window).scroll(function () {
   PositionCheck();/* 現在地を取得する関数を呼ぶ*/
   ScrollAnime();/* ナビゲーションに現在地のクラスをつけるための関数を呼ぶ*/
 });
-
 // ページが読み込まれたらすぐに動かしたい場合の記述
 $(window).on('load', function () {
   PositionCheck();/* 現在地を取得する関数を呼ぶ*/
   ScrollAnime();/* ナビゲーションに現在地のクラスをつけるための関数を呼ぶ*/
 });
-
 $(window).resize(function() {
   //リサイズされたときの処理
   PositionCheck()
 });
-
 /*--------------------------------
  form label
 ---------------------------------*/

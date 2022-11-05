@@ -23,12 +23,8 @@ main{color:#333333;}
   max-width: 1200px;
   margin: 0 auto;
 }
-a:link{
-  color: #87b0ff;
-}
-a:visited{
-  color: #3b7eff;
-}
+a:link{color: #87b0ff;}
+a:visited{color: #3b7eff;}
 h1{
   font-family: 'Lobster', cursive;
   font-size:2rem;
@@ -52,12 +48,14 @@ h3{
 }
 h4{
   font-size:2.4rem;
+  font-weight:bold;
   text-align: center;
   margin: 0 0 30px 0;
   transform: rotate(0.03deg);
 }
 h5{
   font-size:2rem;
+  font-weight:bold;
   text-align: center;
   margin: 0.5em;
   transform: rotate(0.03deg);
@@ -113,9 +111,7 @@ div.header{margin-top: 70px;}
 /*--------------------------------
  navigation
 ---------------------------------*/
-nav{
-  font-family: 'Rajdhani', sans-serif;
-}
+nav{font-family: 'Rajdhani', sans-serif;}
 #g-nav{
   font-size:1.6rem;
   margin-right: 2rem;
@@ -139,7 +135,6 @@ nav ul{
   padding:1.5px 10px 1.5px;
   border-bottom: solid 2px #ffae0f; 
 }
-
 @media screen and (max-width:768px) {
   #g-nav ul li a:hover{color: #666666;}
   #g-nav ul li.current a {color:#fcfcfc;}
@@ -152,6 +147,7 @@ footer a:visited{color: #fcfcfc;}
 footer{background:#333333;}
 footer nav,
 small{
+  font-size: 1.2rem;
   color:#fcfcfc;
   display: block;
   text-align: center;
@@ -171,6 +167,7 @@ footer nav ul li a:hover{
   border-bottom: solid 2px #ffae0f; 
 }
 footer ul{padding-inline-start: 0px;}
+footer small nav ul li div{padding: 0 1rem;}
 footer small nav ul li a{padding-top:0;}
 footer small nav ul li a:hover{padding-top:0;}
 footer small nav{padding:0;}
@@ -245,13 +242,13 @@ section:nth-child(2n+1){background-color:#fff0d3;}
   align-items: center;
   vertical-align: middle;
 }
-.skills-card-icon.html::before{background-image: url("../img/icon/lang/html-5.svg");}
-.skills-card-icon.css::before{background-image: url("../img/icon/lang/css-3.svg");}
-.skills-card-icon.js::before{background-image: url("../img/icon/lang/javascript.svg");}
 .skills-card-icon.java::before{background-image: url("../img/icon/lang/java.svg");}
 .skills-card-icon.php::before{background-image: url("../img/icon/lang/php.svg");}
 .skills-card-icon.python::before{background-image: url("../img/icon/lang/python.svg");}
 .skills-card-icon.mysql::before{background-image: url("../img/icon/lang/mysql.svg");}
+.skills-card-icon.html::before{background-image: url("../img/icon/lang/html-5.svg");}
+.skills-card-icon.css::before{background-image: url("../img/icon/lang/css-3.svg");}
+.skills-card-icon.js::before{background-image: url("../img/icon/lang/javascript.svg");}
 .skills-card-icon.eclipse::before{background-image: url("../img/icon/lang/eclipse-icon.svg");}
 .skills-card-icon.vscode::before{background-image: url("../img/icon/lang/visual-studio-code.svg");}
 .skills-card-icon.git::before{background-image: url("../img/icon/lang/git-icon.svg");}
@@ -261,26 +258,28 @@ section:nth-child(2n+1){background-color:#fff0d3;}
 .skills-card-icon.ai::before{background-image: url("../img/icon/lang/Adobe_Illustrator_CC_icon.svg");}
 .skills-card-icon.vw::before{background-image: url("../img/icon/lang/vectorworks.svg");}
 .skills-card-icon.revit::before{background-image: url("../img/icon/lang/revit.svg");}
-
 .skills-card {
-  width: 100%;
-  margin: 1rem auto;
+  width: 95%;
+  margin: 2rem auto;
   background-color: #fffcf7;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 @media screen and (max-width:1023px) {
-  .skills-card {max-width: 334.75px;}
+  .skills-card {
+    width: 100%;
+    max-width: 334.75px;
+  }
 }
 .skills-card-title {
-  padding: 1rem;
+  padding: 2rem 0 1rem;
   font-size: 2rem;
   font-weight: bold;
-  order: 1;
-  margin:0;
+  margin: 0;
 }
+.skills-card-body{padding: 2rem;}
 .skills-card-table{
   width: 90%;
-  margin: 2rem auto;
+  margin: auto;
   padding: 1rem;
   text-align: center;
 }
@@ -295,14 +294,16 @@ section:nth-child(2n+1){background-color:#fff0d3;}
   width: 90%;
   margin: auto;
 }
+.skills-card-footer {
+  bottom: 0;
+  width: 100%;
+}
 .skills-card-footer-line {
   border-top: 1px solid #ffae0f;
   width: 90%;
   margin: auto;
 }
-.skills-card-text{
-  padding: 1rem;
-}
+.skills-card-text{padding: 1rem 0 2rem;}
 /*--------------------------------
  works
 ---------------------------------*/
@@ -565,7 +566,6 @@ label{
 /*hoverした際の移動*/
 .rtnbtn:hover::before{left:-31px;}
 .rtnbtn:hover::after{left:-26px;}
-
 #thanks{
   vertical-align:middle; 
   padding: 70px 0;
@@ -575,12 +575,8 @@ label{
   margin-bottom: 30px;
   text-align: center;
 }
-#thanks a:link{
-  color: #333;
-}
-#thanks a:visited{
-  color: #333;
-}
+#thanks a:link{color: #333;}
+#thanks a:visited{color: #333;}
 .sentMail::before{
   background-image: url("../img/icon/email-svgrepo-com.svg");
   content: '';
