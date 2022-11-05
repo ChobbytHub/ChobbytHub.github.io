@@ -229,6 +229,39 @@ section:nth-child(2n+1){background-color:#fff0d3;}
 /*--------------------------------
  skills
 ---------------------------------*/
+.skills-card-icon::before {
+  content: '';
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0.55rem 0rem 0rem;
+}
+.skills-card-icon{
+  padding: 0rem 1rem 0rem;
+  display: inline-block;
+  align-items: center;
+  vertical-align: middle;
+}
+.skills-card-icon.html::before{background-image: url("../img/icon/lang/html-5.svg");}
+.skills-card-icon.css::before{background-image: url("../img/icon/lang/css-3.svg");}
+.skills-card-icon.js::before{background-image: url("../img/icon/lang/javascript.svg");}
+.skills-card-icon.java::before{background-image: url("../img/icon/lang/java.svg");}
+.skills-card-icon.php::before{background-image: url("../img/icon/lang/php.svg");}
+.skills-card-icon.python::before{background-image: url("../img/icon/lang/python.svg");}
+.skills-card-icon.mysql::before{background-image: url("../img/icon/lang/mysql.svg");}
+.skills-card-icon.eclipse::before{background-image: url("../img/icon/lang/eclipse-icon.svg");}
+.skills-card-icon.vscode::before{background-image: url("../img/icon/lang/visual-studio-code.svg");}
+.skills-card-icon.git::before{background-image: url("../img/icon/lang/git-icon.svg");}
+.skills-card-icon.phpma::before{background-image: url("../img/icon/lang/PhpMyAdmin_logo.svg");}
+.skills-card-icon.vb::before{background-image: url("../img/icon/lang/virtualbox.svg");}
+.skills-card-icon.vba::before{background-image: url("../img/icon/lang/vba.svg");}
+.skills-card-icon.ai::before{background-image: url("../img/icon/lang/Adobe_Illustrator_CC_icon.svg");}
+.skills-card-icon.vw::before{background-image: url("../img/icon/lang/vectorworks.svg");}
+.skills-card-icon.revit::before{background-image: url("../img/icon/lang/revit.svg");}
+
 .skills-card {
   width: 100%;
   margin: 1rem auto;
@@ -251,8 +284,9 @@ section:nth-child(2n+1){background-color:#fff0d3;}
   padding: 1rem;
   text-align: center;
 }
-.skills-card-table td{
-  width: 40%;
+.skills-card-table td{width: 40%;}
+@media screen and (max-width:375px) {
+  .skills-card-table td{width: 25%;}
 }
 .fas{color:#ffae0f;}
 .far{color:#ffae0f;}
