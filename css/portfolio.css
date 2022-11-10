@@ -2,193 +2,369 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
+
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
-*,*::before,*::after{box-sizing:border-box}*{margin:0}html,body{height:100%}body{line-height:1.5;-webkit-font-smoothing:antialiased}img,picture,video,canvas,svg{display:block;max-width:100%}input,button,textarea,select{font:inherit}p,h1,h2,h3,h4,h5,h6{overflow-wrap:break-word}#root,#-next{isolation:isolate}
-
-
-html{font-size: 10px;}
-body{
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  color:#333333;
-  font-size: 1.6em;
-  margin:0px;
-  background-color: #333; 
+*, *::before, *::after {
+  box-sizing: border-box
 }
-main{color:#333333;}
-.container-wrap{
+
+* {
+  margin: 0
+}
+
+html, body {
+  height: 100%
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%
+}
+
+input, button, textarea, select {
+  font: inherit
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word
+}
+
+#root, #-next {
+  isolation: isolate
+}
+
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: #333333;
+  font-size: 1.6em;
+  margin: 0px;
+  background-color: #333;
+}
+
+main {
+  color: #333333;
+}
+
+.container-wrap {
   width: 85%;
   max-width: 1200px;
   margin: 0 auto;
 }
-a:link{color: #87b0ff;}
-a:visited{color: #3b7eff;}
-h1{
+
+a:link {
+  color: #87b0ff;
+}
+
+a:visited {
+  color: #3b7eff;
+}
+
+h1 {
   font-family: 'Lobster', cursive;
-  font-size:2rem;
+  font-size: 2rem;
   margin-left: 3.2rem;
 }
-h1 a{text-decoration:none;}
-h1 a:link{color: #fcfcfc;}
-h1 a:visited{color: #fcfcfc;}
-h2{
-  font-family: 'Lobster', cursive;
-  font-size:10rem;
-  color:#fcfcfc;
-  text-align:center;
+
+h1 a {
+  text-decoration: none;
 }
-h3{
+
+h1 a:link {
+  color: #fcfcfc;
+}
+
+h1 a:visited {
+  color: #fcfcfc;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 10rem;
+  color: #fcfcfc;
+  text-align: center;
+}
+
+h3 {
   font-family: 'Rajdhani', sans-serif;
-  font-weight:bold;
-  font-size:5rem;
+  font-weight: bold;
+  font-size: 5rem;
   text-align: center;
   margin: 0 0 30px 0;
 }
-h4{
-  font-size:2.4rem;
-  font-weight:bold;
+
+h4 {
+  font-size: 2.4rem;
+  font-weight: bold;
   text-align: center;
   margin: 0 0 30px 0;
   transform: rotate(0.03deg);
 }
-h5{
-  font-size:2rem;
-  font-weight:bold;
+
+h5 {
+  font-size: 2rem;
+  font-weight: bold;
   text-align: center;
   margin: 0.5em;
   transform: rotate(0.03deg);
 }
-p{
-  font-size:1.6rem;
-  margin-top:1.25rem;
+
+p {
+  font-size: 1.6rem;
+  margin-top: 1.25rem;
   transform: rotate(0.03deg);
   margin: 0 auto;
 }
-h3 mark{background:linear-gradient(172deg, transparent 65%, #ffae0f 65%, #ffae0f 100%);}
-h4 mark{background:linear-gradient(transparent 65%, #ffae0f 120%);}
-@media screen and (max-width: 768px) {
-  html{font-size: 8px;}
-  .container-wrap{width: 95%;}
-  h2{font-size: 9rem;}
-  ul{padding-inline-start: 20px;}
+
+h3 mark {
+  background: linear-gradient(172deg, transparent 65%, #ffae0f 65%, #ffae0f 100%);
 }
-dl, ol, ul {margin-bottom: 0;}
-mark{padding:0;}
-.smaller{font-size: 0.7em;}
-th{transform: rotate(0.03deg);}
+
+h4 mark {
+  background: linear-gradient(transparent 65%, #ffae0f 120%);
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+
+  .container-wrap {
+    width: 95%;
+  }
+
+  h2 {
+    font-size: 9rem;
+  }
+
+  ul {
+    padding-inline-start: 20px;
+  }
+}
+
+dl, ol, ul {
+  margin-bottom: 0;
+}
+
+mark {
+  padding: 0;
+}
+
+.smaller {
+  font-size: 0.7em;
+}
+
+th {
+  transform: rotate(0.03deg);
+}
+
 /*--------------------------------
  header
 ---------------------------------*/
-#header{
-  position: fixed;/*header固定*/
+#header {
+  position: fixed;
+  /*header固定*/
   z-index: 10;
-  height: 70px;/*Headerの高さ設定*/
+  height: 70px;
+  /*Headerの高さ設定*/
   top: 0;
   left: 0;
   right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background:#333333;
-  color:#fcfcfc;
+  background: #333333;
+  color: #fcfcfc;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
-div.header{margin-top: 70px;}
-.header-img{
-  background-size:cover;
+
+div.header {
+  margin-top: 70px;
+}
+
+.header-img {
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: grid;
   place-items: center;
 }
-.header .header-img{
+
+.header .header-img {
   height: 500px;
   background-image: url(../img/header.jpg);
 }
-.box{margin: auto;}
+
+.box {
+  margin: auto;
+}
+
 /*--------------------------------
  navigation
 ---------------------------------*/
-nav{font-family: 'Rajdhani', sans-serif;}
-#g-nav{
-  font-size:1.6rem;
+nav {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+#g-nav {
+  font-size: 1.6rem;
   margin-right: 2rem;
 }
-nav ul{
+
+nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
 }
-#g-nav ul li a{
+
+#g-nav ul li a {
   display: block;
   text-decoration: none;
   color: #666666;
-  padding:1.5px 10px 1.5px;
-  border-bottom: solid 2px #333333; 
-  transition:all 0.3s;
+  padding: 1.5px 10px 1.5px;
+  border-bottom: solid 2px #333333;
+  transition: all 0.3s;
 }
+
 #g-nav ul li.current a,
-#g-nav ul li a:hover{
-  color:#fcfcfc;
-  padding:1.5px 10px 1.5px;
-  border-bottom: solid 2px #ffae0f; 
+#g-nav ul li a:hover {
+  color: #fcfcfc;
+  padding: 1.5px 10px 1.5px;
+  border-bottom: solid 2px #ffae0f;
 }
+
 @media screen and (max-width:768px) {
-  #g-nav ul li a:hover{color: #666666;}
-  #g-nav ul li.current a {color:#fcfcfc;}
+  #g-nav ul li a:hover {
+    color: #666666;
+  }
+
+  #g-nav ul li.current a {
+    color: #fcfcfc;
+  }
 }
+
 /*--------------------------------
  footer
 ---------------------------------*/
-footer a:link{color: #fcfcfc;}
-footer a:visited{color: #fcfcfc;}
-footer{background:#333333;}
+footer a:link {
+  color: #fcfcfc;
+}
+
+footer a:visited {
+  color: #fcfcfc;
+}
+
+footer {
+  background: #333333;
+}
+
 footer nav,
-small{
+small {
   font-size: 1.2rem;
-  color:#fcfcfc;
+  color: #fcfcfc;
   display: block;
   text-align: center;
-  padding:10px;
+  padding: 10px;
 }
-footer nav ul a{
-  font-size:1.6rem;
+
+footer nav ul a {
+  font-size: 1.6rem;
   padding-inline-start: 0px;
   display: block;
   text-decoration: none;
-  padding:15px 10px 1.5px;
+  padding: 15px 10px 1.5px;
   border-bottom: solid 2px #333333;
-  transition:all 0.3s;
+  transition: all 0.3s;
 }
-footer nav ul li a:hover{
-  padding:15px 10px 1.5px;
-  border-bottom: solid 2px #ffae0f; 
+
+footer nav ul li a:hover {
+  padding: 15px 10px 1.5px;
+  border-bottom: solid 2px #ffae0f;
 }
-footer ul{padding-inline-start: 0px;}
-footer small nav ul li div{padding: 0 1rem;}
-footer small nav ul li a{padding-top:0;}
-footer small nav ul li a:hover{padding-top:0;}
-footer small nav{padding:0;}
-footer small li+ li {border-left: 1px solid #fcfcfc;}
-small.notHome{padding-top: 30px;}
+
+footer ul {
+  padding-inline-start: 0px;
+}
+
+footer small nav ul li div {
+  padding: 0 1rem;
+}
+
+footer small nav ul li a {
+  padding-top: 0;
+}
+
+footer small nav ul li a:hover {
+  padding-top: 0;
+}
+
+footer small nav {
+  padding: 0;
+}
+
+footer small li+li {
+  border-left: 1px solid #fcfcfc;
+}
+
+small.notHome {
+  padding-top: 30px;
+}
+
 /*--------------------------------
  section
 ---------------------------------*/
-section{padding:30px;}
-section:nth-child(1){padding:100px 30px 30px;}
-section:nth-child(2n){background-color:#fff7e7;}
-section:nth-child(2n+1){background-color:#fff0d3;}
-.header section{padding:30px;}
+section {
+  padding: 30px;
+}
+
+section:nth-child(1) {
+  padding: 100px 30px 30px;
+}
+
+section:nth-child(2n) {
+  background-color: #fff7e7;
+}
+
+section:nth-child(2n+1) {
+  background-color: #fff0d3;
+}
+
+.header section {
+  padding: 30px;
+}
+
 /*--------------------------------
  icon
 ---------------------------------*/
-.icon.about::before{background-image: url("../img/icon/Large/id-card.svg");}
-.icon.skills::before{background-image: url("../img/icon/Large/macbook-pro.svg");}
-.icon.works::before{background-image: url("../img/icon/Large/file-2.svg");}
-.icon.contact::before{background-image: url("../img/icon/Large/envelope.svg");}
+.icon.about::before {
+  background-image: url("../img/icon/Large/id-card.svg");
+}
+
+.icon.skills::before {
+  background-image: url("../img/icon/Large/macbook-pro.svg");
+}
+
+.icon.works::before {
+  background-image: url("../img/icon/Large/file-2.svg");
+}
+
+.icon.contact::before {
+  background-image: url("../img/icon/Large/envelope.svg");
+}
+
 .icon::before {
   content: '';
   display: inline-block;
@@ -199,16 +375,18 @@ section:nth-child(2n+1){background-color:#fff0d3;}
   background-position: center;
   margin: 1rem 0rem 0rem;
 }
-.icon{
+
+.icon {
   padding: 0rem 1.6rem 0rem;
   display: inline-block;
   align-items: center;
   vertical-align: middle;
 }
+
 /*--------------------------------
  about
 ---------------------------------*/
-#about-img{
+#about-img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -217,13 +395,18 @@ section:nth-child(2n+1){background-color:#fff0d3;}
   margin: auto;
   max-width: 150px;
 }
+
 @media screen and (min-width:768px) {
-  .about-text h5{
+  .about-text h5 {
     text-align: left;
     margin-left: 0;
   }
 }
-.about-text h5 .small{font-size: 0.6em;}
+
+.about-text h5 .small {
+  font-size: 0.6em;
+}
+
 /*--------------------------------
  skills
 ---------------------------------*/
@@ -237,78 +420,159 @@ section:nth-child(2n+1){background-color:#fff0d3;}
   background-position: center;
   margin: 0.55rem 0rem 0rem;
 }
-.skills-card-icon{
+
+.skills-card-icon {
   padding: 0rem 1rem 0rem;
   display: inline-block;
   align-items: center;
   vertical-align: middle;
 }
-.skills-card-icon.java::before{background-image: url("../img/icon/lang/java.svg");}
-.skills-card-icon.php::before{background-image: url("../img/icon/lang/php.svg");}
-.skills-card-icon.python::before{background-image: url("../img/icon/lang/python.svg");}
-.skills-card-icon.mysql::before{background-image: url("../img/icon/lang/mysql.svg");}
-.skills-card-icon.html::before{background-image: url("../img/icon/lang/html-5.svg");}
-.skills-card-icon.css::before{background-image: url("../img/icon/lang/css-3.svg");}
-.skills-card-icon.js::before{background-image: url("../img/icon/lang/javascript.svg");}
-.skills-card-icon.eclipse::before{background-image: url("../img/icon/lang/eclipse-icon.svg");}
-.skills-card-icon.vscode::before{background-image: url("../img/icon/lang/visual-studio-code.svg");}
-.skills-card-icon.git::before{background-image: url("../img/icon/lang/git-icon.svg");}
-.skills-card-icon.phpma::before{background-image: url("../img/icon/lang/PhpMyAdmin_logo.svg");}
-.skills-card-icon.vb::before{background-image: url("../img/icon/lang/virtualbox.svg");}
-.skills-card-icon.vba::before{background-image: url("../img/icon/lang/vba.svg");}
-.skills-card-icon.ai::before{background-image: url("../img/icon/lang/Adobe_Illustrator_CC_icon.svg");}
-.skills-card-icon.vw::before{background-image: url("../img/icon/lang/vectorworks.svg");}
-.skills-card-icon.revit::before{background-image: url("../img/icon/lang/revit.svg");}
+
+.skills-card-icon.java::before {
+  background-image: url("../img/icon/lang/java.svg");
+}
+
+.skills-card-icon.php::before {
+  background-image: url("../img/icon/lang/php.svg");
+}
+
+.skills-card-icon.python::before {
+  background-image: url("../img/icon/lang/python.svg");
+}
+
+.skills-card-icon.mysql::before {
+  background-image: url("../img/icon/lang/mysql.svg");
+}
+
+.skills-card-icon.html::before {
+  background-image: url("../img/icon/lang/html-5.svg");
+}
+
+.skills-card-icon.css::before {
+  background-image: url("../img/icon/lang/css-3.svg");
+}
+
+.skills-card-icon.js::before {
+  background-image: url("../img/icon/lang/javascript.svg");
+}
+
+.skills-card-icon.eclipse::before {
+  background-image: url("../img/icon/lang/eclipse-icon.svg");
+}
+
+.skills-card-icon.vscode::before {
+  background-image: url("../img/icon/lang/visual-studio-code.svg");
+}
+
+.skills-card-icon.git::before {
+  background-image: url("../img/icon/lang/git-icon.svg");
+}
+
+.skills-card-icon.phpma::before {
+  background-image: url("../img/icon/lang/PhpMyAdmin_logo.svg");
+}
+
+.skills-card-icon.vb::before {
+  background-image: url("../img/icon/lang/virtualbox.svg");
+}
+
+.skills-card-icon.vba::before {
+  background-image: url("../img/icon/lang/vba.svg");
+}
+
+.skills-card-icon.ai::before {
+  background-image: url("../img/icon/lang/Adobe_Illustrator_CC_icon.svg");
+}
+
+.skills-card-icon.vw::before {
+  background-image: url("../img/icon/lang/vectorworks.svg");
+}
+
+.skills-card-icon.revit::before {
+  background-image: url("../img/icon/lang/revit.svg");
+}
+
 .skills-card {
   width: 95%;
   margin: 2rem auto;
   background-color: #fffcf7;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 @media screen and (max-width:1023px) {
   .skills-card {
     width: 100%;
     max-width: 334.75px;
   }
 }
+
 .skills-card-title {
   padding: 2rem 0 1rem;
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
 }
-.skills-card-body{padding: 2rem;}
-.skills-card-table{
+
+.skills-card-body {
+  padding: 2rem;
+}
+
+.skills-card-table {
   width: 90%;
   margin: auto;
   padding: 1rem;
   text-align: center;
 }
-.skills-card-table td{width: 25%;}
+
+.skills-card-table td {
+  width: 25%;
+}
+
 @media screen and (max-width:424px) {
-  .skills-card-table td{width: 23%;}
-  .skills-card-table{width: 100%;}
+  .skills-card-table td {
+    width: 23%;
+  }
+
+  .skills-card-table {
+    width: 100%;
+  }
 }
+
 @media screen and (min-width:1024px) {
-  .skills-card-table td{width: 35%;}
+  .skills-card-table td {
+    width: 35%;
+  }
 }
-.fas{color:#ffae0f;}
-.far{color:#ffae0f;}
+
+.fas {
+  color: #ffae0f;
+}
+
+.far {
+  color: #ffae0f;
+}
+
 .skills-card-header-line {
   border-bottom: 1px solid #ffae0f;
   width: 90%;
   margin: auto;
 }
+
 .skills-card-footer {
   bottom: 0;
   width: 100%;
 }
+
 .skills-card-footer-line {
   border-top: 1px solid #ffae0f;
   width: 90%;
   margin: auto;
 }
-.skills-card-text{padding: 1rem 0 2rem;}
+
+.skills-card-text {
+  padding: 1rem 0 2rem;
+}
+
 /*--------------------------------
  works
 ---------------------------------*/
@@ -317,42 +581,56 @@ section:nth-child(2n+1){background-color:#fff0d3;}
   margin: 1rem auto;
   aspect-ratio: 3 / 4;
   background-color: #fffcf7;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   position: relative;
-  padding: 0; /*1枚のときのみ*/
+  padding: 0;
+  /*1枚のときのみ*/
 }
+
 .works-card-header {
   display: flex;
   flex-wrap: wrap;
 }
-.works-card-header h4{
-  margin:auto;
+
+.works-card-header h4 {
+  margin: auto;
   margin-bottom: 1rem;
 }
+
 .works-card-title {
   padding: 1rem 1rem 0;
   font-size: 1.6rem;
   font-weight: bold;
   order: 1;
 }
+
 .works-card-thumbnail {
   margin: 0;
   order: 0;
 }
-.works-card-image {width: 100%;}
+
+.works-card-image {
+  width: 100%;
+}
+
 .works-card-body {
   padding: 1rem;
   position: relative;
   height: 35%;
 }
-.works-card-text {font-size: 1.2rem;}
+
+.works-card-text {
+  font-size: 1.2rem;
+}
+
 .works-card-skill {
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
   width: 100%;
-  padding:1rem;
+  padding: 1rem;
 }
+
 .works-card-footer {
   padding: 1rem;
   position: absolute;
@@ -360,77 +638,102 @@ section:nth-child(2n+1){background-color:#fff0d3;}
   width: 100%;
   text-align: center;
 }
+
 .works-card-footer-line {
   padding-top: 1rem;
   border-top: 1px solid #ffae0f;
   width: 100%;
   text-align: center;
 }
-.works-card-text a img{
-  width:2rem;
+
+.works-card-text a img {
+  width: 2rem;
   margin: auto;
 }
-.works-card-text a img:hover{opacity:.5;}
-.works-card-one{width: 250px;}
-@media screen and (min-width:425px) {
-  .works-card-one{width: 300px;}
+
+.works-card-text a img:hover {
+  opacity: .5;
 }
+
+.works-card-one {
+  width: 250px;
+}
+
+@media screen and (min-width:425px) {
+  .works-card-one {
+    width: 300px;
+  }
+}
+
 /*--------------------------------
  contact
 ---------------------------------*/
 @media screen and (min-width:840px) {
-  .contact p{text-align: center;}
+  .contact p {
+    text-align: center;
+  }
 }
-.LinkedIn{
-  display:inline;
+
+.LinkedIn {
+  display: inline;
   height: 1em;
   vertical-align: middle;
   border-bottom: solid 2px #fff0d3;
   transition: .3s;
   box-sizing: content-box;
 }
-.LinkedIn:hover{
+
+.LinkedIn:hover {
   border-bottom: solid 2px #0077b5;
   padding: 1.5px 0 1.5px;
 }
-form button{margin: 2rem 0 3rem;}
-#mailForm{
-  width:85%;
+
+form button {
+  margin: 2rem 0 3rem;
+}
+
+#mailForm {
+  width: 85%;
   max-width: 1000px;
   text-align: center;
-  border:transparent;
+  border: transparent;
   margin: 5rem auto;
-  background:#fffcf7;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  background: #fffcf7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.form-wrap{
-  width:80%;
+
+.form-wrap {
+  width: 80%;
   margin: auto;
   padding-top: 1rem;
 }
-.form-wrap div{
+
+.form-wrap div {
   position: relative;
   margin-top: 3rem;
 }
-label{
-  color:#666666;
+
+label {
+  color: #666666;
   position: absolute;
   top: 0;
   font-size: 1.6rem;
   margin: 0.8rem;
   padding: 0 0.8rem;
   background-color: #fffcf7;
-  -webkit-transition: top .2s ease-in-out, 
-                      font-size .2s ease-in-out;
-  transition: top .2s ease-in-out, 
-              font-size .2s ease-in-out;
+  -webkit-transition: top .2s ease-in-out,
+    font-size .2s ease-in-out;
+  transition: top .2s ease-in-out,
+    font-size .2s ease-in-out;
 }
+
 .active {
   top: -2rem;
   font-size: 1.2rem;
 }
+
 .form-wrap input,
-.form-wrap textarea{
+.form-wrap textarea {
   width: 100%;
   border: 1px solid #333333;
   padding: 0.8rem;
@@ -438,36 +741,48 @@ label{
   background-color: #fffcf7;
   color: #333333;
 }
+
 .form-wrap input:focus,
-.form-wrap textarea:focus{
+.form-wrap textarea:focus {
   outline: none;
 }
-.form-wrap textarea{
+
+.form-wrap textarea {
   height: 6em;
   resize: vertical;
 }
-.recaptcha-box{
+
+.recaptcha-box {
   width: 300px;
-  margin:auto;
+  margin: auto;
   padding-top: 1rem;
 }
-.g-recaptcha{
+
+.g-recaptcha {
   transform-origin: 0% 0%;
-  width:300px;
+  width: 300px;
 }
+
 @media screen and (max-width:768px) {
-  #mailForm{width:95%;}
-  .recaptcha-box{width: 200px;}
-  .g-recaptcha{
+  #mailForm {
+    width: 95%;
+  }
+
+  .recaptcha-box {
+    width: 200px;
+  }
+
+  .g-recaptcha {
     transform-origin: 0% 0%;
-    width:200px;
+    width: 200px;
   }
 }
-.sndbtn{
+
+.sndbtn {
   /*矢印の基点とするためrelativeを指定*/
   position: relative;
   /*ボタンの形状*/
-  background:#fff7e7;
+  background: #fff7e7;
   border: 1px solid #555;
   padding: 0.8rem 30px;
   display: inline-block;
@@ -478,58 +793,85 @@ label{
   /*アニメーションの指定*/
   transition: all .2s linear;
 }
-.sndbtn:hover{background:#ffae0f;}
+
+.sndbtn:hover {
+  background: #ffae0f;
+}
+
 /*矢印と下線の形状*/
-.sndbtn::before{
-  content:"";
+.sndbtn::before {
+  content: "";
   /*絶対配置で下線の位置を決める*/
   position: absolute;
-  top:50%;
-  right:-26px;
+  top: 50%;
+  right: -26px;
   /*下線の形状*/
-  width:40px;
-  height:1px;
-  background:#333;
+  width: 40px;
+  height: 1px;
+  background: #333;
   /*アニメーションの指定*/
   transition: all .2s linear;
 }
-.sndbtn::after{
-  content:"";
+
+.sndbtn::after {
+  content: "";
   /*絶対配置で矢印の位置を決める*/
   position: absolute;
   top: 22.5%;
   right: -21px;
   /*矢印の形状*/
-  width:1px;
-  height:12px;
-  background:#333;
-  transform:skewX(45deg);
+  width: 1px;
+  height: 12px;
+  background: #333;
+  transform: skewX(45deg);
   /*アニメーションの指定*/
   transition: all .2s linear;
 }
-@media screen and (max-width:768px) {.sndbtn::after{top: 16%;}}
+
+@media screen and (max-width:768px) {
+  .sndbtn::after {
+    top: 16%;
+  }
+}
+
 /*hoverした際の移動*/
-.sndbtn:hover::before{right:-31px;}
-.sndbtn:hover::after{right:-26px;}
+.sndbtn:hover::before {
+  right: -31px;
+}
+
+.sndbtn:hover::after {
+  right: -26px;
+}
+
 /*--------------------------------
  privacy-policy.html
 ---------------------------------*/
-.privacy-policy h3{
+.privacy-policy h3 {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 3rem;
   transform: rotate(0.03deg);
 }
-.privacy-policy h4{font-size: 2rem;}
-.right{text-align: right;}
-.Lobster{font-family: 'Lobster', cursive;}
+
+.privacy-policy h4 {
+  font-size: 2rem;
+}
+
+.right {
+  text-align: right;
+}
+
+.Lobster {
+  font-family: 'Lobster', cursive;
+}
+
 /*--------------------------------
  thank_you.html
 ---------------------------------*/
-.rtnbtn{
+.rtnbtn {
   /*矢印の基点とするためrelativeを指定*/
   position: relative;
   /*ボタンの形状*/
-  background:#fff7e7;
+  background: #fff7e7;
   border: 1px solid #555;
   padding: 0.8rem 30px;
   display: inline-block;
@@ -540,51 +882,76 @@ label{
   /*アニメーションの指定*/
   transition: all .2s linear;
 }
-.rtnbtn:hover{background:#ffae0f;}
+
+.rtnbtn:hover {
+  background: #ffae0f;
+}
+
 /*矢印と下線の形状*/
-.rtnbtn::before{
-  content:"";
+.rtnbtn::before {
+  content: "";
   /*絶対配置で下線の位置を決める*/
   position: absolute;
-  top:50%;
-  left:-26px;
+  top: 50%;
+  left: -26px;
   /*下線の形状*/
-  width:40px;
-  height:1px;
-  background:#333;
+  width: 40px;
+  height: 1px;
+  background: #333;
   /*アニメーションの指定*/
   transition: all .2s linear;
 }
-.rtnbtn::after{
-  content:"";
+
+.rtnbtn::after {
+  content: "";
   /*絶対配置で矢印の位置を決める*/
   position: absolute;
   top: 22%;
   left: -21px;
   /*矢印の形状*/
-  width:1px;
-  height:12px;
-  background:#333;
-  transform:skewX(135deg);
+  width: 1px;
+  height: 12px;
+  background: #333;
+  transform: skewX(135deg);
   /*アニメーションの指定*/
   transition: all .2s linear;
 }
-@media screen and (max-width:768px) {.rtnbtn::after{top: 16%;}}
+
+@media screen and (max-width:768px) {
+  .rtnbtn::after {
+    top: 16%;
+  }
+}
+
 /*hoverした際の移動*/
-.rtnbtn:hover::before{left:-31px;}
-.rtnbtn:hover::after{left:-26px;}
-#thanks{
-  vertical-align:middle; 
+.rtnbtn:hover::before {
+  left: -31px;
+}
+
+.rtnbtn:hover::after {
+  left: -26px;
+}
+
+#thanks {
+  vertical-align: middle;
   padding: 70px 0;
   text-align: center;
 }
-#thanks p{
+
+#thanks p {
   margin-bottom: 30px;
   text-align: center;
 }
-#thanks a:link{color: #333;}
-#thanks a:visited{color: #333;}
-.sentMail::before{
+
+#thanks a:link {
+  color: #333;
+}
+
+#thanks a:visited {
+  color: #333;
+}
+
+.sentMail::before {
   background-image: url("../img/icon/email-svgrepo-com.svg");
   content: '';
   display: inline-block;
