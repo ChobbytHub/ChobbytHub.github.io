@@ -583,8 +583,6 @@ section:nth-child(2n+1) {
   background-color: #fffcf7;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   position: relative;
-  padding: 0;
-  /*1枚のときのみ*/
 }
 
 .works-card-header {

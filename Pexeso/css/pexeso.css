@@ -64,7 +64,7 @@ header {
   background-color: darkslategrey;
 }
 
-main{
+main {
   margin-top: 5rem;
   position: fixed;
   width: 100%;
@@ -105,7 +105,7 @@ h3 {
 }
 
 @media screen and (max-width: 571px) {
-  h3{
+  h3 {
     font-size: 3.5rem;
     margin-top: 25vh;
   }
@@ -117,14 +117,15 @@ p {
   color: #333333;
 }
 
-.result{
+.result {
   margin: 1rem 0 0 0;
   padding-top: 1rem;
 }
 
-#cards{
+#cards {
   padding: 0 2rem 0 2rem;
 }
+
 .container-box {
   height: calc(100vh - 10rem);
   margin-right: auto;
@@ -286,12 +287,12 @@ flip card
 button
 ********************/
 
-.start-btn .btn, .retry-btn .btn{
+.start-btn .btn, .retry-btn .btn {
   left: 0;
   margin-left: calc(50% - 55px);
 }
 
-.retry-btn{
+.retry-btn {
   margin-top: 2rem;
   height: 100%;
   z-index: 4;
