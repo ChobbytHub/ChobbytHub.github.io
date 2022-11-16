@@ -187,6 +187,7 @@ $(window).on("load", function () {
       ) {
         //2枚が同じだった時、firstCardを初期値に戻す
         firstCard = null;
+        turn--; // ターンは継続する
         combo++;
         if (maxCombo < combo) {
           maxCombo = combo;
