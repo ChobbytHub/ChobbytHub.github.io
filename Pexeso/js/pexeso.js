@@ -292,6 +292,6 @@ function gameOver(e){
 }
 
 // リセットボタンを押すとリロードしてスタート画面に戻る
-$(".reset-btn, .retry-btn").click(function () {
+$(".reset-btn .btn, .retry-btn .btn").click(function () {
   location.reload();
 });
