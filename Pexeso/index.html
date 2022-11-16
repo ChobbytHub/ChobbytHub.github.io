@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description"  content="いわゆる「神経衰弱」のカードゲームです。">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<title>Pexeso</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="css/pexeso.css">
+</head>
+<body>
+  <header>
+    <h1>Pexeso</h1>
+    <div class="start-btn">
+      <button type="button" class="btn btn-white btn-animate">START</button>
+    </div>
+  </header>
+  <main>
+    <div class="container-box">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-9" id="cards"></div>
+          <div class="col-md-3 score-area">
+            <div class="row">
+              <div class="col-6 col-md-12">
+                <div class="row forBtn">
+                  <div class="col-12 reset-btn">
+                    <button type="button" class="btn btn-white btn-animate">RESET</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-12">
+                <div class="score-box">
+                  <div class="score">
+                    <p class="subject">Time:</p>
+                    <p class="number"><span id="time">0</span></p>
+                    <p class="subject">Turn:</p>
+                    <p class="number"><span id="turn">0</span></p>
+                    <p class="subject">Combo:</p>
+                    <p class="number"><span id="combo">0</span></p>
+                    <p class="subject">maxCombo:</p>
+                    <p class="number"><span id="maxCombo">0</span></p>
+                    <p class="last-subject">Score:</p>
+                    <p class="last-number"><span id="score">0</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>                          
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer"></div>
+    <div class="retry-btn">
+      <button type="button" class="btn btn-white btn-animate">RETRY</button>
+    </div>
+  </footer> 
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="js/pexeso.js"></script>
+</body>
+</html>
