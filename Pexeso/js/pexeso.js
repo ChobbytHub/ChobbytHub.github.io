@@ -138,7 +138,7 @@ $(".start-btn").click(function () {
   // score, timeの初期設定
   score = 500;
   $("#score").text(score);
-  time = 300;
+  time = 100;
   $("#time").text(time);
   let interval = setInterval(function () {
     time--;
