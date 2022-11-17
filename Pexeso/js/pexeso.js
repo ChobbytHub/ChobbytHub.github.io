@@ -136,7 +136,7 @@ $(".start-btn").click(function () {
   $("header").css({ height: "5rem" });
   $("header").html("<h2>Pexeso</h2>");
   // score, timeの初期設定
-  score = 500;
+  score = 20;
   $("#score").text(score);
   time = 300;
   $("#time").text(time);
@@ -253,8 +253,16 @@ $(window).on("load", function () {
   });
 });
 
-let endScoreBox = 
-  '<div class="end-score-box">'
+// ゲームクリア時の処理
+function gameClear(e){
+  clearInterval(e);
+  $("footer").css({ height: "100vh" });
+  document.querySelector(`footer`).animate(
+    [{ opacity: 0 },{ opacity: 1 }],
+    {duration: 2000,fill: 'forwards'}
+  );
+  $("footer .footer").html('<h3>Congratulations</h3>' 
+  + '<div class="end-score-box">'
   + '<p class="result">Result</p>'
   + '<div class="score">'
     + '<p class="subject">Time:</p>'
@@ -268,17 +276,7 @@ let endScoreBox =
     + '<p class="last-subject">Score:</p>'
     + '<p class="last-number"><span id="score">' + score + '</span></p>'
   + '</div>'
-+ '</div>'
-
-// ゲームクリア時の処理
-function gameClear(e){
-  clearInterval(e);
-  $("footer").css({ height: "100vh" });
-  document.querySelector(`footer`).animate(
-    [{ opacity: 0 },{ opacity: 1 }],
-    {duration: 2000,fill: 'forwards'}
-  );
-  $("footer .footer").html('<h3>Congratulations</h3>' + endScoreBox);
++ '</div>');
 }
 
 // ゲームオーバー時の処理
@@ -289,7 +287,22 @@ function gameOver(e){
     [{ opacity: 0 },{ opacity: 1 }],
     {duration: 2000,fill: 'forwards'}
   );
-  $("footer .footer").html('<h3>Game Over</h3>' + endScoreBox);
+  $("footer .footer").html('<h3>Game Over</h3>'
+  + '<div class="end-score-box">'
+  + '<p class="result">Result</p>'
+  + '<div class="score">'
+    + '<p class="subject">Time:</p>'
+    + '<p class="number"><span id="time">' + time + '</span></p>'
+    + '<p class="subject">Turn:</p>'
+    + '<p class="number"><span id="turn">' + turn + '</span></p>'
+    + '<p class="subject">Combo:</p>'
+    + '<p class="number"><span id="combo">' + combo + '</span></p>'
+    + '<p class="subject">maxCombo:</p>'
+    + '<p class="number"><span id="maxCombo">' + maxCombo + '</span></p>'
+    + '<p class="last-subject">Score:</p>'
+    + '<p class="last-number"><span id="score">' + score + '</span></p>'
+  + '</div>'
++ '</div>');
 }
 
 // リセットボタンを押すとリロードしてスタート画面に戻る
