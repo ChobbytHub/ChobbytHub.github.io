@@ -136,7 +136,7 @@ $(".start-btn").click(function () {
   $("header").css({ height: "5rem" });
   $("header").html("<h2>Pexeso</h2>");
   // score, timeの初期設定
-  score = 20;
+  score = 500;
   $("#score").text(score);
   time = 300;
   $("#time").text(time);
